@@ -36,7 +36,7 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
 
 **Espy Anguiano, Nanostring**
 
-  Nanostring categorizes platforms into imagers and profilers
+  Nanostring categorizes platforms into imagers and profilers:
     - Imagers - single cell
     - Profiler - multicellular
 
@@ -98,3 +98,67 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
 
 ## Talk 3 - Characterizing CytoMegalo Virus In Placental Tissue
 **Dr. Rana Chakraborty, Mayo Clinic**
+
+Topic: Characterizing the placental proteome during congenital CMV infection
+
+Chakraborty: "Want to give real-world perspective on using this tech in the clinic"
+
+### Background
+
+Epidemiology of CMV - ubiquitious virus, affects 90%+ of women in developing countries, ~50% in western world
+Most infections are sublinical, prevelance estimated between 83%-100%
+Similar to HSV, CMV establishes lifelong latency following primary infections, trophic for stem cells
+In utero infection can occur in both naive women and those who acquire an unfamilar strain during pregancy (also, can get reactivation of latent virus during pregancy)
+
+Congenital CMV infection is most common worldwide, 0.4-2.3% of newborns affected
+
+Spectrum of severity for congenital infections
+  Children can be born asymptomatic
+  Associated with hearing loss (responsible for ~25% of all congenital hearing loss)
+  10-20% have severe manifestations
+    - microencephaly
+    - chorioretinitis
+    - developmental delay
+
+### Placenta
+
+Placental-fetal interface remains poorly characterized - very understudied. Lab specifically looks at effects of maternal infection on fetus.
+Constant contact between maternal decidua (cell type) and invading fetal chorionic villi.
+  Allows for maternal to fetal blood supply to be established
+  Fetal-placental mixing occurs in intervillous space
+  Barrier contains trophoblasts and maternal macrophages, no B and T cells
+
+CMV infection of placenta - can infect wide variety of cells (endothelial, epithelial, myeloid, hofbauer cells/placental macrophages).
+Infection can lead to distinct innate response, IFNg + IP-10 production
+Chronic villitis and trophoblast damage are noted in CMV infection of placenta
+
+Initial CMV infection is thought to be mediated by FcRN-mediated transcytosis of villous cytotrophoblasts
+
+CMV infection upregulates activation markers on placental macrophages; also increases CCR5 expression on macs + bystander cells
+  These cells also secrete inflammatory markers (IL-10)
+CMV infection causes downregulation of STAT2 and disruption of Type 1 IFN response in infected cells
+
+### Study and Prelim Results
+
+Main hypothesis: CMV-induced activation + apoptosis is associated with trophoblast damage
+
+Cohort: 5 CMV-affected and 4 CMV-unaffected pregnancies
+
+Used Nanostring GeoMix DSP to perform spatial transcriptomic profiling on placental tissue samples
+  Stain FFPE-slides with oligo-conjugated Abs, select region of interest (in spatial space) -> cleave barcodes and quantify digitally
+  Allows for (small region) spatially resolved transcriptomics
+
+Identified CD45+ cells (and cytotrophoblasts via CK7) and profiled using GeoMix
+ Studied four specific ROIs based on interface betwen CD45+ and CK7+ cells
+
+Unsupervised clustering showed that CMV-infected immune cells have distinct proteomic signature:
+    HLA-DR, GZMB, other markers of T cell activation
+
+Differential protein expression analysis identified genes like immune cell markers (CD8, KI67, CD3) and markers of cell death (BIM, BCLXL, PARP, Neurofibromin) associated with CMV-positive tissue immune cells
+
+Didn't identify as obvious + broad changes in cytotrophoblasts vs immune cells
+
+Tentative conclusions:
+  - CMV-infected plancetal tissues show proteomic changes associated with cell death + immune activation
+  - Want to use this data to screen newborns for biomarkers/pathways associated with these data.
+  - Specific to distal villi compartment so unclear how broadly applicable results are
