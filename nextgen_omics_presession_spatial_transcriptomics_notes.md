@@ -35,8 +35,8 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
 **Espy Anguiano, Nanostring**
 
   Nanostring categorizes platforms into imagers and profilers
-    Imagers - single cell
-    Profiler - multicellular
+    - Imagers - single cell
+    - Profiler - multicellular
 
   Yin - DNA-based probes are both imaging and profiling based
     High-value applications of their technology - identifiying tissue-specific biomarkers in a clinical context
@@ -53,7 +53,7 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
   Anguiano - Nanostring says most common application of their tech is immune profiling of patients to discover biomarkers
     Didn't specify tissue vs peripheral blood
 
-**Q&A**
+### Q&A
 
   _What are limitations of the tech and what needs to be prioritized for development?_
     Yin
