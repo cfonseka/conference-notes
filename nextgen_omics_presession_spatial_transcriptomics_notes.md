@@ -4,7 +4,7 @@
 **Dr. Peng Yin, HMS**
 
 _DNA paints_ - superres imaging similar to B. B. DNA painting.
-Difference between STORM/PALM is that blinking of fluorophores is not external, but autonomous
+Difference between STORM/PALM is that blinking of fluorophores is not externally driven, but autonomous
   No photobleaching
   Blinking behaviour is programmable, allows for 5 nm resolution and 10 color multiplexing
     With artificial grids, can achieve resolition of ~ 1 nm
@@ -23,6 +23,7 @@ _SABER_ - Similar to DNA-exchnage, except you hit barcoded primary antiobody wit
   Incremental improvements in scaffolding synthesis methodology allows for signal amplifcation up to 20-30x
   Avoids multiple rounds of primary Ab staining
   Demonstrated multiplexed imaging of 29 proteins and 3 mRNA markers in brain tissue claiming 32-plex amplifcation
+  Belibro tech!
 
 _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barcoding in tissue
   Allows for single-cell acquisition of transcriptome using light-sensitive cross-linking to introduce spatially-linked barcodes to RNA, which provides localization information
@@ -37,8 +38,8 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
 **Espy Anguiano, Nanostring**
 
   Nanostring categorizes platforms into imagers and profilers:
-    - Imagers - single cell
-    - Profiler - multicellular
+  - Imagers - single cell
+  - Profiler - multicellular
 
   Yin - DNA-based probes are both imaging and profiling based
     High-value applications of their technology - identifiying tissue-specific biomarkers in a clinical context
@@ -268,18 +269,20 @@ GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
   - Can then associate cell type interface abundance with clinical outcomes
 
 ### Customer Presentations
-**Dr. Martin Hemberg, BWH**
 
-**Dr. Edgardo Parrilla Castellar, Q2 Solutions**
 
 #### Spatial Transcriptomics Profiling Of COVID-19 Lungs And Pancreatic Ductal Adenocarcinoma
+**Dr. Martin Hemberg, BWH**
 
 
 
 
 #### Utility Of High-Plex Spatial Biology Approaches To Drug Development
+**Dr. Edgardo Parrilla Castellar, Q2 Solutions**
 
 
 ### AtoMtx Presentation
 
-  Cloud platform for spatial transcriptomics
+  Cloud platform for spatial transcriptomics, similar to Tercen and other "walled garden" all-in-one analysis suites.
+
+  Seems useful for companies without computational biology analysts, but not sure of utility for us
