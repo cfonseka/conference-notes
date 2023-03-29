@@ -1,7 +1,7 @@
 # Spatial Transcriptomics Session
 
 ## Talk 1 - Advancing Bioimaging With DNA Probes
-- **Dr. Peng Yin, HMS**
+**Dr. Peng Yin, HMS**
 
 - _DNA paints_ - superres imaging similar to B. B. DNA painting.
 Difference between STORM/PALM is that blinking of fluorophores is not external, but autonomous
@@ -30,9 +30,11 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
   Further talk on this tech by Jocelyn Kishi (9 am, room 3, friday mar 31)
 
 ## Talk 2  - Panel Discussion: Moving Towards The Utilisation Of Spatial Technologies In The Clinic
-- **Dr. Peng Yin, HMS**
-- **Dr. Rana Chakraborty, Mayo Clinic**
-- **Espy Anguiano, Nanostring**
+**Dr. Peng Yin, HMS**
+
+**Dr. Rana Chakraborty, Mayo Clinic**
+
+**Espy Anguiano, Nanostring**
 
   Nanostring categorizes platforms into imagers and profilers
     - Imagers - single cell
@@ -94,5 +96,5 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
 
     - Anguiano - One of the benefits of spatial whole txp allows to understand both molecular and celluar programs that may be distinct to patient subpopulations and thus guide theraputic hypothesis generation (i.e., spatial txp -> better market segmentation). Also very successful in demonstrating/validating expression of markers of response to theraputic treatment, can be easily validated (DNAscope)
 
-  ## Talk 3 - Characterizing CytoMegalo Virus In Placental Tissue
-  - **Dr. Rana Chakraborty, Mayo Clinic**
+## Talk 3 - Characterizing CytoMegalo Virus In Placental Tissue
+**Dr. Rana Chakraborty, Mayo Clinic**
