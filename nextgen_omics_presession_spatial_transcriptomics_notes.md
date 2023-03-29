@@ -380,8 +380,44 @@ Conclusions:
 
 Q^2 solutions is CRO based out of North Carolina
   - owned by IQVIA
+  - multiple sites in and outside of USA
 
+Overall point: spatial transcriptomics falls apart without manual expert pathology review
+  - Can help guide analysis to specific regions of interest (?)
 
+Q^2 is a CRO that works all the way from pre-clinical to targeted CDx (?)
+  - Focus of this talk is hypothesis-driven biomarker discovery/early stage research
+  - Presumption is that biomarker is linked to drug effecacy
+
+Non spatial transcriptomics platforms commonly used by Q^2: flow cytometry, ELIspot
+
+Use case: identifying lesional cell at interface of healthy cells with immune cells
+  - Pathological diagnosis is - does given tissue section have enrichment of cancerous cells?
+  - Want to enrich for cells that are targeted towards neoplastic cells (i.e., PD-1+ T cells)
+  - historical case: trastuzumab was useless until discovery of HER2+ cancers
+
+Advantage of GeoMx - can use marker expression to further refine enrichment of region of interest
+  - Typically have pathologist provide manually driven image segmentation
+  - Can then specify "immune cells" using positive staining for CD45
+  - Thus, get spatially organized whole transcriptome of specific cell types
+
+Performed proof-of-concept validation experiment on normal tonsil tissue for in-house purposes
+  - Used Nanostring Immune Pathways panel for assessing 84 immune-related genes, quantified by nCounter.
+  - Contains both stromal cells and GCs for B cells
+  - Performed 2 replicates in 2 separate runs on 2 tonsil samples
+  - Custom exported data from GeoMx to get raw digital counts (avoided using onboard analysis software)
+  - Examined %CV across housekeeping genes - experimentally comes to < 30% intra- and inter-run (in fairness, he copped to excluding high variability genes)
+  - Showed that mantle and GC cells are different transcriptomically in a sensible way, which is in line with their spatial acquisition
+
+Performed proof-of-concept experiment on tumor-associated immune microenviroments in breast tissues
+Question - how do immune cells differ between these conditions (carcinoma _in situ_, invasive carcinoma, normal duct)?
+  - Potentially identified invasive carcinomas by infiltration of immune cells (CD45 stain, presumably)
+  - Unsurprisingly, there were significant differences between normal ducts and invasive carcinomas - mainly driven by markers for B cells, macrophages, and GZMB/LY6E so some kind of cytotoxic response
+  - Went on to identify differences in immune microenviroments between _in situ_ and invasive carcinomas
+  - Heatmaps shown are specifically chosen to overemphasize group differences, are often labeled as showing "Top 17" or "Top 24" genes
+
+All data shown during this talk was from using nCounter
+New GeoMx NGS pipeline allows for sequencing readout using DSP technology
 
 
 ### AtoMtx Presentation
