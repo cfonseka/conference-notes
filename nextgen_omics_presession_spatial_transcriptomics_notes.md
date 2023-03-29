@@ -42,7 +42,7 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
     High-value applications of their technology - identifiying tissue-specific biomarkers in a clinical context
       All examples during Dr. Yin's talk were academic, research studies and no human data shown
 
-  Chakrborty - exciting period for field, historically didnt have opportunity to analyze tissue in multidimensional space
+  Chakraborty - exciting period for field, historically didnt have opportunity to analyze tissue in multidimensional space
     Allows us to answer questions regarding immune crosstalk
     Using Nanostring tech a lot in clinical profiling of tissues
     Moving into personalized medicine is dependent on personalized genomics
@@ -53,6 +53,40 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
   Anguiano - Nanostring says most common application of their tech is immune profiling of patients to discover biomarkers
     Didn't specify tissue vs peripheral blood
 
-  What are limitations of the tech and what needs to be prioritized for development?
-    Yin - Need scalable high-throughput assays to profile tissues in a deep fashion (100+ marker multiplex)
-    Cost of sequencing has plummeted - need similar changes for spatial tech
+  _What are limitations of the tech and what needs to be prioritized for development?_
+    Yin
+      - Need scalable high-throughput assays to profile tissues in a deep fashion (100+ marker multiplex)
+      - Cost of sequencing has plummeted - need similar changes for spatial tech
+    Chakraborty
+      - Innovations drive up tech cost, especially for non-western healthcare systems
+      - How does rest of world keep up? Need breakthroughs that drive cost downwards
+
+  _How do you envision moving spatial txp into the clinical setting?_
+    Yin
+      - Need to bring technology to both clinicians and pharma researchers, perhaps preclinical stage
+      - Eventually compelling diagnostic use cases may emerge
+      - Immunooncology space is major opportunity for spatial txp
+    Chakraborty
+      - Science is a global space, so hopefully world-wide innovations will help bring down costs
+      - Can't lose sight of bigger picture - patient care
+      - Need forums to explain tech to clinicians and requires constant communication
+      - Encourages groups to look past image analysis when extolling virtues of spatial transcriptomics (docs may not know what transcriptome is)
+  _Q&A_
+    ***Question: Can we use formalin-fixed tissue + does DNA paint work with all Ab?***
+      Yin - technology is modular and should be compatible with any Ab and any tissue, in practice have been able to use commercially-available Abs
+
+    ***Question: Using tissue imaging for gene therapy - challenges and concerns?***
+      Anguiano - Nanostring could be used to detect successful expression of a transgene as it is sequence-agnostic; for cell therapy, would need specific biomarkers. Emphasizes flexibility of Nanostrings tech for assaying localization + expression for both dosage and on/off-target simultaneously
+
+    ***Question: How sensitive are spatial txp to low-expressed transcripts?***
+      Yin - Depends on sequencing depth (for his tech), comparable to scRNA-seq Technologies
+
+      Anguiano - Nanostring whole transcriptome amplification has large dynamic range; sensitivty can be adjusted by including more cells (i.e., if you knowq specific populations express gene of interest, enrich for that pop)
+
+    ***Question: How to we categorize unbiased (discovery) approaches vs targeted approaches for spatial txp?***
+
+      Chakraborty - If you identify biomarkers/new pathways using orthogonal method, could then use spatial txp to identify that biomarker in patient samples. Can evaluate expression in given cell types of biomarker, which can subsequently guide targeting decisions (siRNA vs mAbs vs small molecule). Overall, can help with targeting decisions
+
+      Anguiano - One of the benefits of spatial whole txp allows to understand both molecular and celluar programs that may be distinct to patient subpopulations and thus guide theraputic hypothesis generation (i.e., spatial txp -> better market segmentation). Also very successful in demonstrating/validating expression of markers of response to theraputic treatment, can be easily validated (DNAscope)
+
+    
