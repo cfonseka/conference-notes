@@ -1,5 +1,7 @@
 # Spatial Transcriptomics Session
 
+
+
 ## Talk 1 - Advancing Bioimaging With DNA Probes
 **Dr. Peng Yin, HMS**
 
@@ -29,6 +31,8 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
   Allows for single-cell acquisition of transcriptome using light-sensitive cross-linking to introduce spatially-linked barcodes to RNA, which provides localization information
   Unclear how sequencing is performed as talk went to videos
   Further talk on this tech by Jocelyn Kishi (9 am, room 3, friday mar 31)
+
+
 
 ## Talk 2  - Panel Discussion: Moving Towards The Utilisation Of Spatial Technologies In The Clinic
 **Dr. Peng Yin, HMS**
@@ -96,6 +100,8 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
     - Chakraborty - If you identify biomarkers/new pathways using orthogonal method, could then use spatial txp to identify that biomarker in patient samples. Can evaluate expression in given cell types of biomarker, which can subsequently guide targeting decisions (siRNA vs mAbs vs small molecule). Overall, can help with targeting decisions
 
     - Anguiano - One of the benefits of spatial whole txp allows to understand both molecular and celluar programs that may be distinct to patient subpopulations and thus guide theraputic hypothesis generation (i.e., spatial txp -> better market segmentation). Also very successful in demonstrating/validating expression of markers of response to theraputic treatment, can be easily validated (DNAscope)
+
+
 
 ## Talk 3 - Characterizing CytoMegalo Virus In Placental Tissue
 **Dr. Rana Chakraborty, Mayo Clinic**
@@ -175,6 +181,7 @@ Tentative conclusions:
 - _Question: How similar were the placentas in terms of gestational age?_
 
   - Chakraborty: CMV-infected placentas were 36-38 weeks (as infection is associated with pre-term delivery) while control samples were a little later (40+ weeks).
+
 
 
 ## Talk 4 - Nanostring Spatial Platforms
@@ -268,6 +275,8 @@ GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
 
   - Can then associate cell type interface abundance with clinical outcomes
 
+
+
 ## Talk 5 - Nanostring Customer Presentations
 
 
@@ -327,21 +336,52 @@ Concusions:
   - Identified dysregulated coagulation pathway
   - Identified _SPP1_ macrophages as potentially key driving population in early COVID-19 damage
 
-**Talk 2: pancreatic ductal adenomas**
+**Identifying drivers of pancreatic ductal adenomas using spatial transcriptomics**
 
-Overview:
+Overview: Pancreatic cancer (pancreatic ductural adenocarcinoma = PDAC)is often detected late and quite difficult to treat, making it one of the least survivable cancer
+  - PDAC is often resistant to standard radiotherapy/chemotherapy
 
-Cohort:
+Wanted to use spatial transcriptomics to identify new theraputic targets
+Had previously identified novel, NPC (neural progenitor cell)-like subtype that was malignant
+
+Used CosMx platform to perform spatial molecular imaging in two batches
+  - First batch with 950 gene probes, second batch with additional 50 probes
+  - Performed batch-correction with Limma
+
+Identified broad cell types using known key markers for epithelial + immune cells
+
+Cell type annotation performed using repeated rounds of supervised clustering -> got to ~20 something cell types with defined marker gene expression profiles
+  - unclear how initial + subsequent clustering was performed
+  - Once again, points at UMAP and claims some colors are mixed, others are separate = good
+
+Assessed heterogeneity among malignant glands in tissues using different gene sets for specific malignant subtypes
+  - Found that compared to untreated patients, treated patients had less complex malignant subtypes
+
+Performed ligand-receptor analysis using spatially-organized expression profiles
+  - Developed custom algorithim for this analysis
+  - Identify groups of cells based on spatial organization (with some thresholding), then use optimal transport analysis to balance spatial distance to ligand/receptor gene expression
+  - Builds a cell x cell matrix of interaction probablities
+  - Identify statistically significant interactions using explict permutation of condition labels
+
+The CCI maps (Circos plots) looked almost identical between conditions EXCEPT for increased interactions between malignant cells and cancer-associated fibroblasts in untreated samples
+
+Claim: can sanity check results of CCI analysis by showing that ligand and receptor expressing cells are spatially physically linked, especially for high expressing cells - which sounds great until you remember that the analysis was driven by spatial groupings to begin with
+
+More convincingly, demonstrated that downstream targets of receptors are also diferent between conditions in a sensible manner (although correlations are fairly low)
+
+Molecular followup using mouse organiod model -> performed snRNA-seq after coculturing CAFs with tumoroids with and without treatment
 
 Conclusions:
-
-
-
+  - Idenfitied gene CLCF1 whose expression levels can be used to separate cohort surviability (i.e., potential target)
+    - unclear how useful of a target this actually is - requires more validation
 
 ### Utility Of High-Plex Spatial Biology Approaches To Drug Development
 **Dr. Edgardo Parrilla Castellar, Q2 Solutions**
 
-Q2 solutions is CRO based out of North Carolina
+Q^2 solutions is CRO based out of North Carolina
+  - owned by IQVIA
+
+
 
 
 ### AtoMtx Presentation
