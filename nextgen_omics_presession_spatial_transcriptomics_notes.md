@@ -234,20 +234,50 @@ GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
   Localizes with 50 nm resolution
 
   System just launched so panels limited
-    1000 gene panels for Human universal, neuroscience and immunoncology
+
+    - 1000 gene panels for Human universal, neuroscience and immunoncology:
+
       - 250 genes for cell typing (full expression profiles are used for cell type annotation)
       - 500 for cell state/function
       - 200 genes for cell-cell interaction (receptor/ligand pairs)
       - 50 genes for hormone activities
 
-    64 marker protein panel available for human
-    
+    - Claim their 1000 gene panel is 4x what is available from competitors
+      - Can customize with 50 additional targets
 
+    - 64 marker protein panel available for human
 
+  Cell segmentation is ML-based, uses Z-stacks and nuclear + cytoplasmic markers to perform. Backbone is called CellPose, but changed in proprietary ways
+    Not geometry based
+    Segmentation performs well across different cell types
 
+  First publication using CosMx is in Nat Biotech, 2020
+    ~ 750K cells, ~250 transcript/cell
+    Can handle low quality RNA, all samples shown had RIN < 3
 
+  Claim automation is straightforward for high-throughput applications
 
+  More recent liver cancer dataset achieves ~ 450K cells at ~1150 transcript/cell -> 218 genes detected/cell
+    Capture ~676 genes above LOD (so ~ 67.6% of panel is recoverable)
+
+  New 6000 transcript panel is coming soon (estimated Q1 2024)
+    Claim ~5500 unqiue genes detected
+    Claim 119 proteins
+      Potentially powers better segmentation (?)
+
+  Interesting use case: performing co-expression analysis of signaling molecules + ligands to identify _spatially_ organized clusters of cell-cell interactions
+    Can then associate cell type interface abundance with clinical outcomes
 
 ### Customer Presentations
+**Dr. Martin Hemberg, BWH**
+
+**Dr. Edgardo Parrilla Castellar, Q2 Solutions**
+
+#### Spatial Transcriptomics Profiling Of COVID-19 Lungs And Pancreatic Ductal Adenocarcinoma
+
+
+
+#### Utility Of High-Plex Spatial Biology Approaches To Drug Development
+
 
 ### AtoMtx Presentation
