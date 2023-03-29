@@ -71,7 +71,9 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
       - Can't lose sight of bigger picture - patient care
       - Need forums to explain tech to clinicians and requires constant communication
       - Encourages groups to look past image analysis when extolling virtues of spatial transcriptomics (docs may not know what transcriptome is)
-  _Q&A_
+
+  **Q&A**
+
     ***Question: Can we use formalin-fixed tissue + does DNA paint work with all Ab?***
       Yin - technology is modular and should be compatible with any Ab and any tissue, in practice have been able to use commercially-available Abs
 
@@ -88,5 +90,3 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
       Chakraborty - If you identify biomarkers/new pathways using orthogonal method, could then use spatial txp to identify that biomarker in patient samples. Can evaluate expression in given cell types of biomarker, which can subsequently guide targeting decisions (siRNA vs mAbs vs small molecule). Overall, can help with targeting decisions
 
       Anguiano - One of the benefits of spatial whole txp allows to understand both molecular and celluar programs that may be distinct to patient subpopulations and thus guide theraputic hypothesis generation (i.e., spatial txp -> better market segmentation). Also very successful in demonstrating/validating expression of markers of response to theraputic treatment, can be easily validated (DNAscope)
-
-    
