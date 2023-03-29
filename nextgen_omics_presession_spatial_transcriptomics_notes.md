@@ -3,7 +3,7 @@
 ## Talk 1 - Advancing Bioimaging With DNA Probes
 **Dr. Peng Yin, HMS**
 
-_DNA paints_ - superres imaging similar to B. B. DNA painting.
+- _DNA paints_ - superres imaging similar to B. B. DNA painting.
 Difference between STORM/PALM is that blinking of fluorophores is not external, but autonomous
   No photobleaching
   Blinking behaviour is programmable, allows for 5 nm resolution and 10 color multiplexing
@@ -11,15 +11,15 @@ Difference between STORM/PALM is that blinking of fluorophores is not external, 
 
 Because intial fluorophores use docking strand and secondary amplification, can use orthogonal labeling to multiplex and assay multiple markers in superres
 
-_DNA nanoscope_ - nanoimaging by sequencing
+- _DNA nanoscope_ - nanoimaging by sequencing
 Uses nanopore sequencing to reconstruct single molecule spatial transcriptomics (scope-free)
   unlike DNA paints, no superres setup required
 
-_DNA-Exchange_ - Uses DNA barcodes to label primary antibodies, then use fluorophores conjugated to barcodes and exchange rapidly (~ 5 min) to perform high throughput multiplexing
+- _DNA-Exchange_ - Uses DNA barcodes to label primary antibodies, then use fluorophores conjugated to barcodes and exchange rapidly (~ 5 min) to perform high throughput multiplexing
   Can be used in conjuction with confocal or superres
   There is no secondary antibody which helps with background issues, but decreases sensitivity
 
-_SABER_ - Similar to DNA-exchnage, except you hit barcoded primary antiobody with long concatemer, allowing many many fluorophores to bind to the primary Ab, increasing sensitivity
+- _SABER_ - Similar to DNA-exchnage, except you hit barcoded primary antiobody with long concatemer, allowing many many fluorophores to bind to the primary Ab, increasing sensitivity
   Incremental improvements in scaffolding synthesis methodology allows for signal amplifcation up to 20-30x
   Avoids multiple rounds of primary Ab staining
   Demonstrated multiplexed imaging of 29 proteins and 3 mRNA markers in brain tissue claiming 32-plex amplifcation
@@ -55,26 +55,24 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
 
 ### Q&A
 
-  - _What are limitations of the tech and what needs to be prioritized for development?_
+  - _Question: What are limitations of the tech and what needs to be prioritized for development?_
+    - Yin
+      - Need scalable high-throughput assays to profile tissues in a deep fashion (100+ marker multiplex)
+      - Cost of sequencing has plummeted - need similar changes for spatial tech
+    - Chakraborty
+      - Innovations drive up tech cost, especially for non-western healthcare systems
+      - How does rest of world keep up? Need breakthroughs that drive cost downwards
 
-  - Yin
-    - Need scalable high-throughput assays to profile tissues in a deep fashion (100+ marker multiplex)
-    - Cost of sequencing has plummeted - need similar changes for spatial tech
-  - Chakraborty
-    - Innovations drive up tech cost, especially for non-western healthcare systems
-    - How does rest of world keep up? Need breakthroughs that drive cost downwards
-
-  - _How do you envision moving spatial txp into the clinical setting?_
-
-  - Yin
-    - Need to bring technology to both clinicians and pharma researchers, perhaps preclinical stage
-    - Eventually compelling diagnostic use cases may emerge
-    - Immunooncology space is major opportunity for spatial txp
-  - Chakraborty
-    - Science is a global space, so hopefully world-wide innovations will help bring down costs
-    - Can't lose sight of bigger picture - patient care
-    - Need forums to explain tech to clinicians and requires constant communication
-    - Encourages groups to look past image analysis when extolling virtues of spatial transcriptomics (docs may not know what transcriptome is)
+  - _Question: How do you envision moving spatial txp into the clinical setting?_
+    - Yin
+      - Need to bring technology to both clinicians and pharma researchers, perhaps preclinical stage
+      - Eventually compelling diagnostic use cases may emerge
+      - Immunooncology space is major opportunity for spatial txp
+    - Chakraborty
+      - Science is a global space, so hopefully world-wide innovations will help bring down costs
+      - Can't lose sight of bigger picture - patient care
+      - Need forums to explain tech to clinicians and requires constant communication
+      - Encourages groups to look past image analysis when extolling virtues of spatial transcriptomics (docs may not know what transcriptome is)
 
   - _Question: Can we use formalin-fixed tissue + does DNA paint work with all Ab?_
 
