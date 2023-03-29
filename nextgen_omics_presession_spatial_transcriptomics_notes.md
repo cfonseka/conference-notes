@@ -53,6 +53,8 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
   Anguiano - Nanostring says most common application of their tech is immune profiling of patients to discover biomarkers
     Didn't specify tissue vs peripheral blood
 
+**Q&A**
+
   _What are limitations of the tech and what needs to be prioritized for development?_
     Yin
       - Need scalable high-throughput assays to profile tissues in a deep fashion (100+ marker multiplex)
@@ -72,20 +74,18 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
       - Need forums to explain tech to clinicians and requires constant communication
       - Encourages groups to look past image analysis when extolling virtues of spatial transcriptomics (docs may not know what transcriptome is)
 
-  **Q&A**
-
-    ***Question: Can we use formalin-fixed tissue + does DNA paint work with all Ab?***
+  _Question: Can we use formalin-fixed tissue + does DNA paint work with all Ab?_
       Yin - technology is modular and should be compatible with any Ab and any tissue, in practice have been able to use commercially-available Abs
 
-    ***Question: Using tissue imaging for gene therapy - challenges and concerns?***
+  _Question: Using tissue imaging for gene therapy - challenges and concerns_
       Anguiano - Nanostring could be used to detect successful expression of a transgene as it is sequence-agnostic; for cell therapy, would need specific biomarkers. Emphasizes flexibility of Nanostrings tech for assaying localization + expression for both dosage and on/off-target simultaneously
 
-    ***Question: How sensitive are spatial txp to low-expressed transcripts?***
+  _Question: How sensitive are spatial txp to low-expressed transcripts_
       Yin - Depends on sequencing depth (for his tech), comparable to scRNA-seq Technologies
 
       Anguiano - Nanostring whole transcriptome amplification has large dynamic range; sensitivty can be adjusted by including more cells (i.e., if you knowq specific populations express gene of interest, enrich for that pop)
 
-    ***Question: How to we categorize unbiased (discovery) approaches vs targeted approaches for spatial txp?***
+  _Question: How to we categorize unbiased (discovery) approaches vs targeted approaches for spatial txp_
 
       Chakraborty - If you identify biomarkers/new pathways using orthogonal method, could then use spatial txp to identify that biomarker in patient samples. Can evaluate expression in given cell types of biomarker, which can subsequently guide targeting decisions (siRNA vs mAbs vs small molecule). Overall, can help with targeting decisions
 
