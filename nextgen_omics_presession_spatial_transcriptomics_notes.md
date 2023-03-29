@@ -268,17 +268,17 @@ GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
 
   - Can then associate cell type interface abundance with clinical outcomes
 
-### Customer Presentations
+## Talk 5 - Nanostring Customer Presentations
 
 
-#### Spatial Transcriptomics Profiling Of COVID-19 Lungs And Pancreatic Ductal Adenocarcinoma
+### Spatial Transcriptomics Profiling Of COVID-19 Lungs And Pancreatic Ductal Adenocarcinoma
 **Dr. Martin Hemberg, BWH**
 
 Topic: Identifiying molecular drivers of alveolar damage in COVID-19 patients and identifying novel theraputic targets for pancreatic ductal adenomas with spatial Transcriptomics
 
 Two different projects that Nanostring asked him to talk about (COVID-19/pancreatic cancer)
 
-##### Profiling molecular drivers of alveolar damage in COVID-19
+**Profiling molecular drivers of alveolar damage in COVID-19**
 
 COVID-19 is a multisystemic virus, but mainly respiratory disease that affects lungs.
 Better understanding of disease progression could help prediction and guide treatment.
@@ -327,15 +327,21 @@ Concusions:
   - Identified dysregulated coagulation pathway
   - Identified _SPP1_ macrophages as potentially key driving population in early COVID-19 damage
 
-##### understudied
+**Talk 2: pancreatic ductal adenomas**
 
-dd
+Overview:
+
+Cohort:
+
+Conclusions:
 
 
 
 
-#### Utility Of High-Plex Spatial Biology Approaches To Drug Development
+### Utility Of High-Plex Spatial Biology Approaches To Drug Development
 **Dr. Edgardo Parrilla Castellar, Q2 Solutions**
+
+Q2 solutions is CRO based out of North Carolina
 
 
 ### AtoMtx Presentation
