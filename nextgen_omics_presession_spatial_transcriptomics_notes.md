@@ -274,6 +274,63 @@ GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
 #### Spatial Transcriptomics Profiling Of COVID-19 Lungs And Pancreatic Ductal Adenocarcinoma
 **Dr. Martin Hemberg, BWH**
 
+Topic: Identifiying molecular drivers of alveolar damage in COVID-19 patients and identifying novel theraputic targets for pancreatic ductal adenomas with spatial Transcriptomics
+
+Two different projects that Nanostring asked him to talk about (COVID-19/pancreatic cancer)
+
+##### Profiling molecular drivers of alveolar damage in COVID-19
+
+COVID-19 is a multisystemic virus, but mainly respiratory disease that affects lungs.
+Better understanding of disease progression could help prediction and guide treatment.
+
+SARS CoV2 binds to ACE2 receptor on alvelor cells - subsequent progression is less well understood
+Previous spatial analysis work idetnified changes in mesenchymal cells and fibroblasts in lung for COVID patients
+  Tracks with fibrosis and inflammtory respiratory symptoms in disease
+
+Used GeoMx platform - labels small tissue region/"cell types" with whole transcriptome
+
+Cohort: 30 COVID-19 autopsy lung tissue and donor lung tissue from non-healthy controls (n=?), samples were FFPE. All from UK and processed uniformly.
+  - Each spatial sample was manually annotated by pathologist for damage state based on alveolar morphology (four states with increasing damage)
+
+Used sc/snRNA-seq data separately alongside Nanostring profiling
+  - single cell data used to drive cell type annotation from GeoMx
+  - Many public scRNA-seq datasets on COVID-19 vs healthy were available, but integration was problematic
+  - Ended up with 600K cell reference with fairly balanced contributions from studies without too much batch variability (by UMAP)
+
+Annotated lung cell types + broad immune cell types, then used sc references to yield final set of ~70 fine-grained cell types
+
+Differential abundance (in scRNA-seq or Nanostring? unclear) analysis identified enrichment of immune cells in COVID-19
+
+Also performed cell-cell interaction analysis on both dissociated scRNA-seq and spatially organized transcriptomes from Nanostring
+  - Identify condition-specific pathway enrichment
+
+Asked if spatial data would be able to resolve damage states as assesed by histopathology
+  - Used random forest classification to identify gene sets associated with outcome
+  - Prediction accuracy (dont know what number this is) was 0.73 using top 1000 HVGs, drops to 0.67 using only surface markers and 0.69 using secreted markers
+  - From looking at data, markers are more associated with a single stage vs others as opposed to defined sets for all four stages
+
+Followup analyses focus on EDAD vs ODAD (different alveolar damage categories) - identify many pathways that are potentially interesting -> investigated dysregulation of coagulation
+  - Downregulation of SERPINE1 leads to fibrinolysis and coagulation - from previous COVID work
+  - Confirm same change in COVID samples  
+
+Interesting - abundance estimates from scRNA-seq deconvolution vs Nanostring tissue are consistent but differ significantly
+  - Based on regions of interest sampled, cell type abundance differences between damage categories are very minimal compared to COVID vs control
+
+Extend this type of analysis to identify a set of "cell states" - i.e., gene expression profiles that are associated with earlier stages of COVID disease
+
+Went on to use NMF to associate Nanostring Region of Interests with cell types via NMF factorization
+  - They call factors "niches" and attempt to identify which subcomponents of the _SPP1_ pathway (identified as COVID relevant orthogonally) are associated with which cell types
+
+Concusions:
+  - Profiled 33 donors using Nanostring GeoMx
+  - Histopathology allowed for investigation of cell type abundance during disease progression
+  - Identified dysregulated coagulation pathway
+  - Identified _SPP1_ macrophages as potentially key driving population in early COVID-19 damage
+
+##### understudied
+
+dd
+
 
 
 
@@ -285,4 +342,4 @@ GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
 
   Cloud platform for spatial transcriptomics, similar to Tercen and other "walled garden" all-in-one analysis suites.
 
-  Seems useful for companies without computational biology analysts, but not sure of utility for us
+  Seems useful for companies without computational biology analysts, but not sure of utility for us.
