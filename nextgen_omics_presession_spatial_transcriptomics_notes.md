@@ -76,23 +76,23 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
 
   - _Question: Can we use formalin-fixed tissue + does DNA paint work with all Ab?_
 
-    Yin - technology is modular and should be compatible with any Ab and any tissue, in practice have been able to use commercially-available Abs
+    - Yin - technology is modular and should be compatible with any Ab and any tissue, in practice have been able to use commercially-available Abs
 
   - _Question: Using tissue imaging for gene therapy - challenges and concerns_
 
-    Anguiano - Nanostring could be used to detect successful expression of a transgene as it is sequence-agnostic; for cell therapy, would need specific biomarkers. Emphasizes flexibility of Nanostrings tech for assaying localization + expression for both dosage and on/off-target simultaneously
+    - Anguiano - Nanostring could be used to detect successful expression of a transgene as it is sequence-agnostic; for cell therapy, would need specific biomarkers. Emphasizes flexibility of Nanostrings tech for assaying localization + expression for both dosage and on/off-target simultaneously
 
   - _Question: How sensitive are spatial txp to low-expressed transcripts_
 
-    Yin - Depends on sequencing depth (for his tech), comparable to scRNA-seq Technologies
+    - Yin - Depends on sequencing depth (for his tech), comparable to scRNA-seq Technologies
 
-    Anguiano - Nanostring whole transcriptome amplification has large dynamic range; sensitivty can be adjusted by including more cells (i.e., if you knowq specific populations express gene of interest, enrich for that pop)
+    - Anguiano - Nanostring whole transcriptome amplification has large dynamic range; sensitivty can be adjusted by including more cells (i.e., if you knowq specific populations express gene of interest, enrich for that pop)
 
   - _Question: How to we categorize unbiased (discovery) approaches vs targeted approaches for spatial txp_
 
-    Chakraborty - If you identify biomarkers/new pathways using orthogonal method, could then use spatial txp to identify that biomarker in patient samples. Can evaluate expression in given cell types of biomarker, which can subsequently guide targeting decisions (siRNA vs mAbs vs small molecule). Overall, can help with targeting decisions
+    - Chakraborty - If you identify biomarkers/new pathways using orthogonal method, could then use spatial txp to identify that biomarker in patient samples. Can evaluate expression in given cell types of biomarker, which can subsequently guide targeting decisions (siRNA vs mAbs vs small molecule). Overall, can help with targeting decisions
 
-    Anguiano - One of the benefits of spatial whole txp allows to understand both molecular and celluar programs that may be distinct to patient subpopulations and thus guide theraputic hypothesis generation (i.e., spatial txp -> better market segmentation). Also very successful in demonstrating/validating expression of markers of response to theraputic treatment, can be easily validated (DNAscope)
+    - Anguiano - One of the benefits of spatial whole txp allows to understand both molecular and celluar programs that may be distinct to patient subpopulations and thus guide theraputic hypothesis generation (i.e., spatial txp -> better market segmentation). Also very successful in demonstrating/validating expression of markers of response to theraputic treatment, can be easily validated (DNAscope)
 
   ## Talk 3 - Characterizing CytoMegalo Virus In Placental Tissue
   **Dr. Rana Chakraborty, Mayo Clinic**
