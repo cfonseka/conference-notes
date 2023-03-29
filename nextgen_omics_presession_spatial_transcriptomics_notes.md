@@ -233,19 +233,17 @@ GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
     Mentioned protein expression is highly helpful for segmentation
   Localizes with 50 nm resolution
 
-  System just launched so panels limited
+  System just launched so panels are limited:
+  - 1000 gene panels for Human universal, neuroscience and immunoncology:
+    - 250 genes for cell typing (full expression profiles are used for cell type annotation)
+    - 500 for cell state/function
+    - 200 genes for cell-cell interaction (receptor/ligand pairs)
+    - 50 genes for hormone activities
 
-    - 1000 gene panels for Human universal, neuroscience and immunoncology:
-
-      - 250 genes for cell typing (full expression profiles are used for cell type annotation)
-      - 500 for cell state/function
-      - 200 genes for cell-cell interaction (receptor/ligand pairs)
-      - 50 genes for hormone activities
-
-    - Claim their 1000 gene panel is 4x what is available from competitors
+  - Claim their 1000 gene panel is 4x what is available from competitors
       - Can customize with 50 additional targets
 
-    - 64 marker protein panel available for human
+  - 64 marker protein panel available for human
 
   Cell segmentation is ML-based, uses Z-stacks and nuclear + cytoplasmic markers to perform. Backbone is called CellPose, but changed in proprietary ways
     Not geometry based
@@ -281,3 +279,5 @@ GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
 
 
 ### AtoMtx Presentation
+
+  Cloud platform for spatial transcriptomics
