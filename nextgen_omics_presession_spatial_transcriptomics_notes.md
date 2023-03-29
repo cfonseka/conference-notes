@@ -144,11 +144,11 @@ Main hypothesis: CMV-induced activation + apoptosis is associated with trophobla
 
 Cohort: 5 CMV-affected and 4 CMV-unaffected pregnancies
 
-Used Nanostring GeoMix DSP to perform spatial transcriptomic profiling on placental tissue samples
+Used Nanostring GeoMx DSP to perform spatial transcriptomic profiling on placental tissue samples
   Stain FFPE-slides with oligo-conjugated Abs, select region of interest (in spatial space) -> cleave barcodes and quantify digitally
   Allows for (small region) spatially resolved transcriptomics
 
-Identified CD45+ cells (and cytotrophoblasts via CK7) and profiled using GeoMix
+Identified CD45+ cells (and cytotrophoblasts via CK7) and profiled using GeoMx
  Studied four specific ROIs based on interface betwen CD45+ and CK7+ cells
 
 Unsupervised clustering showed that CMV-infected immune cells have distinct proteomic signature:
@@ -177,3 +177,77 @@ Tentative conclusions:
 
 
 ## Talk 4 - Nanostring Spatial Platforms
+**Eric Miller, Nanostring**
+
+**Espy Anguiano, Nanostring**
+
+### Let's Get Spatial Q&A Session
+
+Nanostring has been around since 2003, 2008 when nCounter came online.
+
+Now offer three platforms:
+  - nCounter (bulk targeted gene expression analysis)
+  - GeoMx Digital Spatial Profiler (tissue spatial proteomics)
+    - Uses photocleavable linkers to sequence Ab-linked barcodes with localization
+  - CosMx Spatial Molecular Imager (tissue spatial transcriptomics)
+
+GeoMx can only obtain whole transcriptome data for very small spatial areas; CosMx provides _less-than_ whole transcriptomic evidence for larger areas (?)
+
+CosMx - 6000 transcripts/50-60 proteins; 2-20 samples/wk
+GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
+
+#### GeoMx
+
+  GeoMx use case - you have an idea of the physical region of interest, want to acquire gene expression/protein expression data on cells _in that small area_
+    Works with ffpe, fresh frozen, whole mount, tma samples
+  Protein panels available: immune cell, neural cell
+  Gene panels: 18,000 human genes, 22,000 mouse genes
+  Custom assays available (including spike-in controls)
+
+  Differs Nanostring GeoMx from "array-based" technologies for use case where you are certain a given interface/margin is more important than other areas.
+    Avoids dropout/averaging issues from capturing entire slide (?)
+    Miller: "Similar to localized IHC"
+
+  Can define different "regions of interest" for spatial profiling
+    Geometric filters, grids, and actual cell segmentation options
+    ROIs can be drawn by hand as well, although they claim automation based on markers is "very possible"
+
+  Claims that although ROIs are not single cell, resolution is 1 um, allowing you to get close to single cell
+
+  In example, you can identify melanocytes in slide by segmentation based on marker expression, then quantify whole transcriptome from that _bulk_ population (i.e., wash off Abs and count transcripts with that localization-affected barcode)
+
+  Example, used GeoMx to profile pancreas cells and identified a and B islets, then quantified txp from those pops and showed that Insulin and Glucagon expression is associated correctly
+
+  Cool example of using scRNA-seq data of clustered cell types to power GeoMx to subcluster whole trancriptome profiles (but its still bulk profiles)
+
+  Over 200 peer-reviewed pubs with GeoMx
+
+#### CosMx
+
+  Claim: unbiased single cell spatial analysis of whole tissue sections
+  Showed from on 1.4m single cells with localization information from lymph node FFPE sections
+
+  Library size is limited to 1000 genes (they say 1000-plex?)
+  Can use FFPE, fresh frozen, TMA and organoids
+  Multiomic profiles possible - i.e., protein/mRNA co-profiling
+    Mentioned protein expression is highly helpful for segmentation
+  Localizes with 50 nm resolution
+
+  System just launched so panels limited
+    1000 gene panels for Human universal, neuroscience and immunoncology
+      - 250 genes for cell typing (full expression profiles are used for cell type annotation)
+      - 500 for cell state/function
+      - 200 genes for cell-cell interaction (receptor/ligand pairs)
+      - 50 genes for hormone activities
+
+    64 marker protein panel available for human
+    
+
+
+
+
+
+
+### Customer Presentations
+
+### AtoMtx Presentation
