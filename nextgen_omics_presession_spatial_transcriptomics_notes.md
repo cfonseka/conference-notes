@@ -246,8 +246,10 @@ GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
 
   - 64 marker protein panel available for human
 
-  Cell segmentation is ML-based, uses Z-stacks and nuclear + cytoplasmic markers to perform. Backbone is called CellPose, but changed in proprietary ways
+  Cell segmentation is ML-based, uses Z-stacks and nuclear + cytoplasmic markers to perform. Backbone is called CellPose, but changed in proprietary ways:
+
     - Not geometry based
+
     - Segmentation performs well across different cell types
 
   First publication using CosMx is in Nat Biotech, 2020
