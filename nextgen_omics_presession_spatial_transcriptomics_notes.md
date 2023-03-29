@@ -194,6 +194,7 @@ Now offer three platforms:
 GeoMx can only obtain whole transcriptome data for very small spatial areas; CosMx provides _less-than_ whole transcriptomic evidence for larger areas (?)
 
 CosMx - 6000 transcripts/50-60 proteins; 2-20 samples/wk
+
 GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
 
 #### GeoMx
@@ -250,18 +251,22 @@ GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
     Segmentation performs well across different cell types
 
   First publication using CosMx is in Nat Biotech, 2020
+
     ~ 750K cells, ~250 transcript/cell
+
     Can handle low quality RNA, all samples shown had RIN < 3
 
   Claim automation is straightforward for high-throughput applications
 
   More recent liver cancer dataset achieves ~ 450K cells at ~1150 transcript/cell -> 218 genes detected/cell
+
     Capture ~676 genes above LOD (so ~ 67.6% of panel is recoverable)
 
   New 6000 transcript panel is coming soon (estimated Q1 2024)
+
     Claim ~5500 unqiue genes detected
-    Claim 119 proteins
-      Potentially powers better segmentation (?)
+
+    Claim 119 proteins - potentially powers better segmentation (?)
 
   Interesting use case: performing co-expression analysis of signaling molecules + ligands to identify _spatially_ organized clusters of cell-cell interactions
     Can then associate cell type interface abundance with clinical outcomes
@@ -272,6 +277,7 @@ GeoMx - 20,000 transcripts/150+ proteins; 60 samples/wk
 **Dr. Edgardo Parrilla Castellar, Q2 Solutions**
 
 #### Spatial Transcriptomics Profiling Of COVID-19 Lungs And Pancreatic Ductal Adenocarcinoma
+
 
 
 
