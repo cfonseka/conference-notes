@@ -3,7 +3,7 @@
 ## Talk 1 - Advancing Bioimaging With DNA Probes
 **Dr. Peng Yin, HMS**
 
-- _DNA paints_ - superres imaging similar to B. B. DNA painting.
+_DNA paints_ - superres imaging similar to B. B. DNA painting.
 Difference between STORM/PALM is that blinking of fluorophores is not external, but autonomous
   No photobleaching
   Blinking behaviour is programmable, allows for 5 nm resolution and 10 color multiplexing
@@ -11,15 +11,15 @@ Difference between STORM/PALM is that blinking of fluorophores is not external, 
 
 Because intial fluorophores use docking strand and secondary amplification, can use orthogonal labeling to multiplex and assay multiple markers in superres
 
-- _DNA nanoscope_ - nanoimaging by sequencing
+_DNA nanoscope_ - nanoimaging by sequencing
 Uses nanopore sequencing to reconstruct single molecule spatial transcriptomics (scope-free)
   unlike DNA paints, no superres setup required
 
-- _DNA-Exchange_ - Uses DNA barcodes to label primary antibodies, then use fluorophores conjugated to barcodes and exchange rapidly (~ 5 min) to perform high throughput multiplexing
+_DNA-Exchange_ - Uses DNA barcodes to label primary antibodies, then use fluorophores conjugated to barcodes and exchange rapidly (~ 5 min) to perform high throughput multiplexing
   Can be used in conjuction with confocal or superres
   There is no secondary antibody which helps with background issues, but decreases sensitivity
 
-- _SABER_ - Similar to DNA-exchnage, except you hit barcoded primary antiobody with long concatemer, allowing many many fluorophores to bind to the primary Ab, increasing sensitivity
+_SABER_ - Similar to DNA-exchnage, except you hit barcoded primary antiobody with long concatemer, allowing many many fluorophores to bind to the primary Ab, increasing sensitivity
   Incremental improvements in scaffolding synthesis methodology allows for signal amplifcation up to 20-30x
   Avoids multiple rounds of primary Ab staining
   Demonstrated multiplexed imaging of 29 proteins and 3 mRNA markers in brain tissue claiming 32-plex amplifcation
@@ -162,3 +162,18 @@ Tentative conclusions:
   - CMV-infected plancetal tissues show proteomic changes associated with cell death + immune activation
   - Want to use this data to screen newborns for biomarkers/pathways associated with these data.
   - Specific to distal villi compartment so unclear how broadly applicable results are
+  - Next steps would be to determine if CTBs are coming from maternal or fetal side
+  - Long-term, identify infants with congential CMV and apply antiviral drugs early
+
+### Q&A
+
+- _Question: Is CMV infection associated with development of autoimmunity?_
+
+  - Audience member noted that many of the markers associated with activation of T cells are similar to what is seen in autoimmunity. Chakraborty said that based on ZA collaboration on patients with congential HIV infection suggests infants demonstrate signs of having exhausted T cells. Belives that inflammatory effects could easily have deleterious effects on post-natal newborns but data is preliminary
+
+- _Question: How similar were the placentas in terms of gestational age?_
+
+  - Chakraborty: CMV-infected placentas were 36-38 weeks (as infection is associated with pre-term delivery) while control samples were a little later (40+ weeks).
+
+
+## Talk 4 - Nanostring Spatial Platforms
