@@ -160,4 +160,40 @@ Overall: Interesting technology and supervised RL could be useful for our single
 
 ## Talk 4 - Panel Discussion: Novel Genome Editing Techniques & Their Applications
 
-## Talk 5 -
+**Laralynne Przybyla, UCSD**
+
+**Mara Pavel-Dinu, Stanford**
+
+**Tirtha Chakraborty, Vor Biopharma**
+
+## Talk 5 - Detection Of Mutations In Matched FFPE And cfDNA Samples
+
+**Dr. Han Wei, Beckman-Coulter**
+
+## Talk 6 - Next-Generation CRISPR Screening Platforms For Insights Into Human Disease Biology
+
+**Laralynne Przybyla, UCSD**
+
+## Talk 7 - Nano Scale Multiomics Solution With Highly Accurate Single Cell Sorting And Isolation
+
+**Dr. Andrea Ockhardt, Cellenion**
+
+## Talk 8 - Enhancing Immune Profiling Through SingleCell Multiomics
+
+**Devan Phillips, Genentech**
+
+## Talk 9 - Single Cell Biology Made Simple
+
+**Dr. Robert Meltzer, Fluent Biosciences**
+
+## Talk 10 - SIMBA - Building Interpretable Regulatory Maps Using Graph-Embedding On Single-Cell Multiomics Data
+
+**Luca Pinello, MGH**
+
+## Talk 11 - Panel Discussion: Utilising Multiple Large Scale Single Cell Datasets
+
+**Daniel Lu, Amgen**
+
+**Luca Pinello, MGH**
+
+**Dr. Lihua Julie Zhu, UMass Medical**
