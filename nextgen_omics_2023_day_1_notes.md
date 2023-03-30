@@ -56,10 +56,108 @@ Final note - can try to link computational pathology to mass spec for better tar
 
 ## Talk 1 - Quality-Control Methods In NGS Diagnostic Test Development
 
-**James Willey, Univeristy of Toledo**
+**Dr. James Willey, Univeristy of Toledo**
 
+Co-founder of Accugenomics, Inc
 
+Data from FDA-sponsered study of circulating tumor DNA (ctDNA)
+- Why study? Can discover actionable (druggable) mutations specific to patients tumor
+- Help track disease activity, potentially predict reoccurence
+
+Spike in controls are used to improve QC in NGS analysis of ctDNA
+- Called SNAQ-SEQ IS controls
+- Full exon with actionable mutation +500 bp flank, dinucleotide changes made every 50 bp for bioinformatic separation
+- idea is to mix controls in with ctDNA samples
+
+ctDNA analyses are challenged by false negative results due to low levels, technical error, and flucuations in ratio of ctDNA to normal ctDNA
+
+Can use standards to identify rate of sequencing errors, since sequences are standard to ref
+- All differences from reference are errors
+
+Study objective: identify guidelines for liquid biopsy (LBx) ctDNA testing:
+- Reference materials include mix of DNA from 10 cell lines + normal control
+- Determined ground truth set of 42K known positve and 10M known negative sites
+- Generated test samples by mixing tumor-normal at 1:1, 1:5, and 1:25
+
+Results:
+- High precision + reliablity of VAF > 0.5%, becomes unreliable below that
+- Performance degrades with limited starting material (< 25 ng)
+- False negatives (missed mutations) more common than false positives
+- Fragment depth is critical variable, deep coverage needed for detection of rare variants
+
+Used SNAQ-SEQ internal standards in conjugation with Illumina TST170 ctDNA method:
+- Align IS and test reads to different references, then call variants in both and use IS variant calls to normalize calls for test samples
+- Methodology is unclear
+- Allowed them to recover 13% of true positive mutations that were missed by Illumina due to low support
+- SNAQ-SEQ only increases sensitivity for variants with VAF < 0.3%
+
+Showed evidence that IS controls help control variation in ctDNA measurements
+- Reduced CV to less than 25%
+
+Methylation of ctDNA may be useful for diagnosis/monitoring of malignancies
+- Performed study on GM24385 cell line to study improvements from adding IS
+- Used bisulfite sequencing to detect methylation over samples with known % methlation at site (SOXA)
+- Found that SNAQ-SEQ improved reliablity of methylation detection in ctDNA analysis (data lacking)
 
 ## Talk 2 - Discovering Next-Generation Biomarkers Through Integrating Single-Cell ‘Omics And Artificial Intelligence
 
 **Sarah Carl, Scailyte**
+
+Scailyte is a Swiss startup, ~6 years old
+
+Biomarkers can help improve R&D productivity by helping improve clinical trial failure rates
+- 90% of clinical trials fail, 50% of those to lack of effecacy
+
+Use single cell data to power biomarker Discovery
+- Advantages:
+  - highly granular and sensitive, doesn't average across bulk tissues
+  - Directly assess state of biologically-relevant primary patient samples
+  - Get 1000s-10,000s of cells per sample (doesn't seem compelling)
+- Disadvantages:
+  - Data are noisy and vulnerable to batch effects
+  - Patterns can be too complex to analyze manually
+
+Use supervised representation learning model
+- Patient-level annotations are used as input to model (i.e., responders/non-responders)
+- Representation learning attempts to find a better representation of the original feature space
+- So for scRNA-seq, idea is to find features other than the measured features (genes) to better separate patient labels
+
+Claim that supervised RL is better than standard scRNA-seq analysis of unsupervised clustering -> manual cluster annotation -> compare clusters across outcomes
+- Standard method is bad because:
+  - Very dependent on inital clustering
+  - Requires pre-existing knowledge to perform annotations
+  - Reduces sensitivty to cell signatures that are shared across clusters
+  - Dilutes single cell data to bulk (cluster-level)
+
+For some reason - computational cost (?) - they train the NN on many subsamples of patient data
+- Claim improves generalizability - probably true
+- NN representation is fairly shallow, allowing for better explainability
+  - this is a key feature - allows them to claim biomarker discovery by examining model weights
+
+ScaiVision can be used in cell therapy development
+- Donor selection for allogenic cell therapy
+- Patient stratification for autologous cell therapy
+
+Analyzed scRNA-seq data generated from CAR-T infusion products prior to dosing (external study)
+- 24 patient cohort, labeled as high-grade or low-grade neurotoxicity
+- Trained model on 70% split to identify biomarker profile that predicted groups
+- Identified genes changing in CD8 and CD4 T cells that yields interesting looking GO enrichment
+- Standard clustering approach used by external study authors claimed no difference between CD4s and CD8s and instead stratified patients based on presence or absence of rare cell type
+  - Overall percentages of "signature-associated" cell pop found by ScaiVision was quite low (< 0.2%)
+
+Used ScaiVision to perform biomarker discovery in a study of CTCL
+- CTCL - cutaneous t cell lymphoma
+- Used CyTOF data to get 3.5M cells with 36 protein markers
+- Identified set of CD4 t cells specific to CTCL patients
+- Reduced 36 marker description of pop to 9 marker panel that maintained sensitivty for diagnosing CTCL patients
+
+Overall: Interesting technology and supervised RL could be useful for our single cell analyses
+  - Unclear how much this would improve results from our current NMF-based approaches
+
+## Talk 3 - PRCISR™: Vivlion’s CRISPR-Enabled Discovery Platform
+
+**Martin Wegner, Vivlion GmbH**
+
+## Talk 4 - Panel Discussion: Novel Genome Editing Techniques & Their Applications
+
+## Talk 5 -
