@@ -472,27 +472,3 @@ Because SIMBA is extensible to multiple layers of features, naturally extends to
 
 Overall: It seems like an interesting method, although its not clear why this embedding is superior to NMF-based approaches. Also, it's not clear to me how directly interpretable this methodology would be on less well-labled data
    - All examples used were from external, pre-labeled datasets
-
-
-## Talk 11 - Panel Discussion: Utilising Multiple Large Scale Single Cell Datasets
-
-**Daniel Lu, Amgen**
-
-**Luca Pinello, MGH**
-
-**Dr. Lihua Julie Zhu, UMass Medical**
-
-## Talk 12 - From Data Integration To Biological Insights: Analyzing scATAC-seq And scRNA-seq Data with scATACpipe For Comprehensive And Reproducible Single-Cell Multi-Omics Analysis
-
-**Dr. Lihua Julie Zhu, UMass Medical**
-
-
-## Talk 13 - Single-Cell Multi-Omics Decodes Cellular Expression And Regulation Dynamics During Mouse Palate Development
-
-**Dr. Zhongming Zhao, UT Health Science Center**
-
-
-
-## Talk 14 - Harnessing Single-Cell Transcriptomics And Spatial Biology For Cell-Centric Drug Development
-
-**Giorgio Gaglia, Sanofi**
