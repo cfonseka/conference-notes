@@ -296,12 +296,47 @@ Showed some data suggesting that BC's new automated cell-free extraction system 
 - Upcoming end-to-end cell-free assay method claims "conversion" is better - leading to more library complexity
   - Unclear what "conversion" means in this context
 - Uses IDT xGen cfDNA kit
+- Reduces protocol losses through automated sample handling
 
 
 
 ## Talk 6 - Next-Generation CRISPR Screening Platforms For Insights Into Human Disease Biology
 
 **Laralynne Przybyla, UCSF**
+
+Works in Laboratory for Genomics Research - goal is to improve model systems + screening
+
+Improved model systems
+- Want to develop human cell-based models that functionally recapitulate disease-relative biology
+- Need to ensure CRISPRi and CRISPRa machinery is active in cell lines
+- Want to ensure 95% or more of cell poulation downregulates targeted gene (for CRISPRi; for CRISPRa look for increased expression)
+- Use iPSCs as model system
+  - Amenable to editing
+  - Express endogenous genes to mimic disease phenotypes
+
+Two challenges for CRISPR genome-wide screening:
+- Need to maintain stable expression of CRISPR expression during differentiation
+- Need to maintain guide diversity during differentiation
+  - if you introduce guides prior to differentiation/cell type of interest selection, you severly bottleneck the guide library
+  - To solve this, use overexpression of cell type specific TFs to push iPSC population towards desired cell type
+    - Have large research program to identify cell-type specific TF drivers
+
+To improve transduction efficiency, attempt to identify other factors whose levels can be modulated to improve transduction
+- Found set of restriction factors that increase efficiency after KO - note that they are cell-type specific
+
+There are also optimization steps to take on the readout/assay side
+- Different modalities:
+  - Survival screens - identify genes related to cell survival using genetic pertubations via CRISPRi and CRISPRa
+  - FACS-based screens - sort out populations of interest by using guides that integrate a reporter via HDR. Allows for identification of cells that are easily transducible
+  - Arrayed image-based screens - allows for large scale multiparamteric readouts that require temporal/spatial imaging OR something like an organiod based readout
+  - Single cell functional genomics screens - Combine CRISPR-targeted gene modulation with single cell RNA/ATAC-seq
+    - Similar idea to Perturb-Seq
+
+CRISPRon/off is a method of using CRISPR hooked up to endogenous methylation machinery to provide inducible gene silence
+- Potentially interesting use cases for us
+
+Also have a genome-wide arrayed set of dual gRNAs for all human protein-coding genes
+- Dependent on signfiicant automation for screening
 
 
 
@@ -334,3 +369,18 @@ Showed some data suggesting that BC's new automated cell-free extraction system 
 **Luca Pinello, MGH**
 
 **Dr. Lihua Julie Zhu, UMass Medical**
+
+## Talk 12 - From Data Integration To Biological Insights: Analyzing scATAC-seq And scRNA-seq Data with scATACpipe For Comprehensive And Reproducible Single-Cell Multi-Omics Analysis
+
+**Dr. Lihua Julie Zhu, UMass Medical**
+
+
+## Talk 13 - Single-Cell Multi-Omics Decodes Cellular Expression And Regulation Dynamics During Mouse Palate Development
+
+**Dr. Zhongming Zhao, UT Health Science Center**
+
+
+
+## Talk 14 - Harnessing Single-Cell Transcriptomics And Spatial Biology For Cell-Centric Drug Development
+
+**Giorgio Gaglia, Sanofi**
