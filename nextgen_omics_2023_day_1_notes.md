@@ -345,20 +345,133 @@ Also have a genome-wide arrayed set of dual gRNAs for all human protein-coding g
 **Dr. Andrea Ockhardt, Cellenion**
 
 
+Have two major types of instrument modalities
+- Cellenone (single cell)
+- Spheroone (spheroids/organoids)
+
+cellenOne - platform for single cell sorting and isolation
+- Uses glass capillary to perform droplet isolation
+  - By using differently sized capillaries, can isolate differently sized cells
+- Image based cell detection (like the old C1?)
+  - Camera visualizes end of droplet needle and rejects cells if they are doublets or "wrong" (different size or morphology than expected)
+  - Uses fluoresence based illumination to identify live/dead
+- Can load 96, 384, or 1536 well plates
+- Claim: no size bias, only recover single cells
+- Can use small sample volums (1 ul), any cell size from 1-80 um
+- Can analyze up to 1000s of cells (presumably with 1536 well plate)
+
+cellenCHIP/proteoCHIP
+- cellenCHIP is 384 well plate (4 arrays of 96 wells), 1.5 mm wells with 20-500 nl working volumes
+- cellenCHIP is provided with reagents as 384 3' RNA-seq kit
+  - cellenone dispenses single cells into each well of the cellenCHIP in an automated fashion
+  - After dispensing, you do the RT reaction in each well, pool cDNA and perform library amplification on the pool (presumably each well location gets a barcode?)
+
+Also offer proteomics based solutions to perform single cell mass spec
+- Effectively, use single cell dispenser to isolate, then run single cells directly into LC-MS (either TOF or Orbitrap) and then perform MS analysis
 
 ## Talk 8 - Enhancing Immune Profiling Through SingleCell Multiomics
 
 **Devan Phillips, Genentech**
 
+Overview: group at Genentech centered around molecular profiling and tissue atlasing
+- Want to identify disease-related pathways + biomarkers
+- Identify cell types and cell subtypes, as well molecular challenges
+
+Multimodal single cell assays allow for acquiring different data modalities from the same single cells
+
+Performed immune profiling study to identify biomarkers linked to responder/non-responder status on COVID-19 cohort
+
+Claim: 5' kit has better representation across entire transcriptome vs 3' (for GEX)
+- Hzu et al, Oct 2022
+- Showed that 3' has more intronic/incomplete reads
+
+Used 5' 10x sequencing with hashtag markers that are pan-expressed that can be easily labeled by Ab
+- Allows for superloading samples into a single GEM
+
+Added cell surface protein panel to acquire RNA and protein simultaneously (+ TCR/BCR!)
+- Used CITE-Seq panel of 130 human cell surface proteins
+
+Process: thaw samples + hashtag label, pool at normalized volumes, label with surface protein Abs, perform droplet based 10x sequencing
+- Points out that live cells require quick processing otherwise viability losses will impact expression readout
+
+Identified transcriptionally distinct B cell pops that produced neutralizing Abs (nAbs) to COVID
+- Resembled memory and activated B cells
+- Using the strength of nAbs from patient samples, was able to identify two specific highly potent neutralizing CDR3s
+- Also identified sex-specific differences in memory T cell development in COVID-19 patients vs healthy controls
+
+Differences between single cell and single nucleus sequencing:
+- Get more immune cells with scRNAseq, more parenchymal cells with snRNA-seq
+- Typically scRNA-seq done on fresh and snRNA-seq done on frozen
+- Cell composition profiles are quite different between the modalities when applied to the same tissue sample
+
+
+
 ## Talk 9 - Single Cell Biology Made Simple
 
 **Dr. Robert Meltzer, Fluent Biosciences**
+
+Use novel, microfluidics-free, single cell method called Particle-templated Instant Partitions (PIP)
+- PIP-seq published in Nat Biotech ~2 weeks ago
+- Offers scalability and flexibility over other single cell methods
+
+Idea: given a tube containing template beads onto which you place your single cell mix, then use mixing to isolate single cells physically (?)
+- details unclear, but requires a lab vortexer and little else
+- Works from 384 well plates up to 50 ml conical tubes
+- Have commercialized kits available for 2k, 20K, and 100K cell reactions
+
+Differences from other single-cell methods is the single cell isolation and lysis step
+- Done through partitions and physical separation
+- mRNA is labeled and then conveted to cDNA prior to standard Illumina sequencing
+- Offer "Pipseeker" software for end-to-end analysis
+
+Pipseeker takes standard FASTQs as input
+- Performs barcode deconvolution, cell calling, clustering and annotation
+- Output looks similar to cellranger for 10x runs
+
+PIPseq performance is comparable to 10x
+- Separates doublets well (HEK/3T3 experiment)
+- Achieves ~800 genes (9,000 transcripts) per cell
+- Capture time is ~10 minutes, library prep ~ 2 days
+- Latest chemistry version: v4.0
+  - Claim: 35% increase in transcripts/cell, 65% increase in genes/cell (so over 1K)
+  - Claim: cell capture rates 60-85%
+
+Claim: experimentalists suggest that this droplet technique works very well for sticky/large cells like gilial cells
+
+PIPseq is compatible with both fresh cells and frozen nuclei; working with BioLegend to enable protein labeling and cell hashing using ADTs
 
 
 
 ## Talk 10 - SIMBA - Building Interpretable Regulatory Maps Using Graph-Embedding On Single-Cell Multiomics Data
 
 **Luca Pinello, MGH**
+
+Uses concepts from NLP (natural language processing) to assign formal structure to biological concepts (i.e. sentinment analysis)
+- Can we consider ATAC seq tracks as a word/sentence?
+- Hierarchical classification models like this can be embedded onto graphs
+
+Similarly, in biology, gene activation can be described as a hierarchical (directed) graph where different molecular features like accessibility, sequence, and enhancer activity all account for gene regulation
+
+SIMBA starts with single cell data and builds a graph between cells and different features (genes, chromatin peaks, motifs)
+- "Knowledge Graph" a la google (large, sparse)
+  - For cells to gene graph, edge weight is proportional to cell specific expression of that gene
+- Can then embedd that graph using PyTorch and convert to a shared embedding (projected feature space?)
+- Try to understand relationship of co-localized featues in new space
+  - Derive a probability of association between any feature and any given cell
+
+Showed a figure of genes projected into UMAP space and claimed that they co-localize with cell types and thus yields cell type-specific expression
+- Points out that this method is ignorant of initial clustering (and, in fact, recapitulates it)
+
+Next dataset: scATAC-seq
+- Network is more complicated - cells connect to peaks, which then connect to kmers/motifs
+
+Because SIMBA is extensible to multiple layers of features, naturally extends to multiomic analyses
+  - Can relate cells to both gene expression and ATAC-seq peaks/kmers in the same embedding
+  - Claim: can use distance between TF gene and motif to identify master regulators within a dataset (?)
+    - More usefully, can attempt to identify TF targets by looking for linked target gene peaks
+
+Overall: It seems like an interesting method, although its not clear why this embedding is superior to NMF-based approaches. Also, it's not clear to me how directly interpretable this methodology would be on less well-labled data
+   - All examples used were from external, pre-labeled datasets
 
 
 
