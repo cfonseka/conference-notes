@@ -54,6 +54,7 @@ Can analyze spatial heterogeneity in different ways - spatial proximity score
 Final note - can try to link computational pathology to mass spec for better target priortization and identifying protein signatures (potential biomarkers)
 
 
+
 ## Talk 1 - Quality-Control Methods In NGS Diagnostic Test Development
 
 **Dr. James Willey, Univeristy of Toledo**
@@ -154,9 +155,45 @@ Used ScaiVision to perform biomarker discovery in a study of CTCL
 Overall: Interesting technology and supervised RL could be useful for our single cell analyses
   - Unclear how much this would improve results from our current NMF-based approaches
 
+
+
 ## Talk 3 - PRCISR™: Vivlion’s CRISPR-Enabled Discovery Platform
 
 **Martin Wegner, Vivlion GmbH**
+
+CRISPR-based library screening platform
+
+CRISPR consists of endonuclease (cutter) and small gRNA (sequence-specific guide) that introduces DSBs in known locations
+- NHEJ-mediated repair of these DSBs creates indels, which shift the reading frame and break the gene, affecting functionality
+- Can easily perform genome-wide screens by applying a set of guides to a collection of cells (1 guide/cell), then look for differences in treatment response based on gene KO
+- Can perform synthetic lethality screens using WT and single-gene KO cell lines, identify potential genes that are synthetically lethal with existing KO
+  - Use combinatorial CRISPR library where two KOs occur in each cell; avoids cell line effects from establishing KO line
+
+Combinatorial CRISPR screening has many challenges
+- Library setup can be complicated (size of guide, dsitribution, genes, controls)
+- Cell line, assay, analysis plan all can vary
+
+Talk will cover three main points:
+- Library design
+- Uniform sgRNA generation
+- Scaling
+
+Library design
+- Offer both single and dual-target libraries
+- Dual-target libraries can be set up to be all vs all, all vs many, or fixed combinations as requested by customer
+
+Uniform representation of guide RNAs
+- Some guides are generated more easily than others
+- Measure uniform library dsitribution using ratio of 90th percentile to 10th percentile (so closer ratio is to 1 = more uniform)
+- Important because distribution determines coverage available during screen
+  - The more skewed a library is (less uniform), the more coverage is required to overcome bias
+- Vivlion avoids this issue by avoiding PCR cloning (or restriction/ligation based cloning)
+  - Instead, use template site-directed mutagenesis to bacterially amplify the final CRISPR library with gRNA sequences
+- Showed data suggesting that single- or dual-target libraries from Vivlion increase KO rates for essential genes by > 10-fold
+
+Scaling/Parallelization
+- Typically large-scale screens require many rounds of PCR cloning
+- Vivlion says their libraries allow for reducing size of screens by 10fold
 
 
 
@@ -168,19 +205,28 @@ Overall: Interesting technology and supervised RL could be useful for our single
 
 **Tirtha Chakraborty, Vor Biopharma**
 
+ddd
+
 
 
 ## Talk 5 - Detection Of Mutations In Matched FFPE And cfDNA Samples
 
 **Dr. Han Wei, Beckman-Coulter**
 
+
+
+
 ## Talk 6 - Next-Generation CRISPR Screening Platforms For Insights Into Human Disease Biology
 
 **Laralynne Przybyla, UCSD**
 
+
+
 ## Talk 7 - Nano Scale Multiomics Solution With Highly Accurate Single Cell Sorting And Isolation
 
 **Dr. Andrea Ockhardt, Cellenion**
+
+
 
 ## Talk 8 - Enhancing Immune Profiling Through SingleCell Multiomics
 
@@ -190,9 +236,13 @@ Overall: Interesting technology and supervised RL could be useful for our single
 
 **Dr. Robert Meltzer, Fluent Biosciences**
 
+
+
 ## Talk 10 - SIMBA - Building Interpretable Regulatory Maps Using Graph-Embedding On Single-Cell Multiomics Data
 
 **Luca Pinello, MGH**
+
+
 
 ## Talk 11 - Panel Discussion: Utilising Multiple Large Scale Single Cell Datasets
 
