@@ -474,7 +474,6 @@ Overall: It seems like an interesting method, although its not clear why this em
    - All examples used were from external, pre-labeled datasets
 
 
-
 ## Talk 11 - Panel Discussion: Utilising Multiple Large Scale Single Cell Datasets
 
 **Daniel Lu, Amgen**
