@@ -158,6 +158,8 @@ Overall: Interesting technology and supervised RL could be useful for our single
 
 **Martin Wegner, Vivlion GmbH**
 
+
+
 ## Talk 4 - Panel Discussion: Novel Genome Editing Techniques & Their Applications
 
 **Laralynne Przybyla, UCSD**
@@ -165,6 +167,8 @@ Overall: Interesting technology and supervised RL could be useful for our single
 **Mara Pavel-Dinu, Stanford**
 
 **Tirtha Chakraborty, Vor Biopharma**
+
+
 
 ## Talk 5 - Detection Of Mutations In Matched FFPE And cfDNA Samples
 
