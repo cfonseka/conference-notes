@@ -39,7 +39,7 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
 
 **Dr. Rana Chakraborty, Mayo Clinic**
 
-**Espy Anguiano, Nanostring**
+**Dr. Espy Anguiano, Nanostring**
 
   Nanostring categorizes platforms into imagers and profilers:
   - Imagers - single cell
@@ -104,6 +104,7 @@ _Light-Seq_ - Whole transcriptome spatial sequencing via light-directed DNA barc
 
 
 ## Talk 3 - Characterizing CytoMegalo Virus In Placental Tissue
+
 **Dr. Rana Chakraborty, Mayo Clinic**
 
 Topic: Characterizing the placental proteome during congenital CMV infection
@@ -185,9 +186,10 @@ Tentative conclusions:
 
 
 ## Talk 4 - Nanostring Spatial Platforms
+
 **Eric Miller, Nanostring**
 
-**Espy Anguiano, Nanostring**
+**Dr. Espy Anguiano, Nanostring**
 
 ### Let's Get Spatial Q&A Session
 

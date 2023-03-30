@@ -195,30 +195,113 @@ Scaling/Parallelization
 - Typically large-scale screens require many rounds of PCR cloning
 - Vivlion says their libraries allow for reducing size of screens by 10fold
 
+_Question: How do you define guide RNAs for each gene?_
+Wegner: We use guides from published work (so emperically validated) but also use synthetic design tools if needed (i.e., if they don't have a guide for that target in their database)
+
+_Question: How many guides to use for each gene?_
+Wegner: Use between 3-4 guides per gene or you can't guarantee KO
+
 
 
 ## Talk 4 - Panel Discussion: Novel Genome Editing Techniques & Their Applications
 
-**Laralynne Przybyla, UCSD**
+**Laralynne Przybyla, UCSF**
 
 **Mara Pavel-Dinu, Stanford**
 
 **Tirtha Chakraborty, Vor Biopharma**
 
-ddd
+
+
+_Question: How can we design screens for identifying new theraputic targets_
+
+Przybyla: When we're trying to discover new targets, have to spend a lot of time setting up model system and assay correctly. Need to pay attention to what kind of readouts are being used and if they're relevant to the disease of interest.
+
+_Question: What has been your experience in array screening (vs pool screening) for CRISPR?_
+
+Przybyla: Scale is smaller for array-based screening.
+
+_Question: How do you validate hits from initial screen?_
+
+Przybyla: Again, follow the biology. For example, use large-scale pooled survival screen, then take hits and evaluate in array-based or single-cell-based assay in more targeted/relevant symbol.
+
+_Question: Have you seen variation based on the source of iPSCs (batch effects)?_
+
+Przybyla: Run multple cells from multple donors, do followups in multiple donors to avoid cell line specific biases
+
+_Question: In your experience, do you use screening to find new targets?_
+
+Pavel-Dinu: We want to develop broadly-applicable therapies, meaning we need to use much larger payloads (?). Too large payloads (>4.7 kb) reduces transduction efficiency as well as causing lethality in target cells.
+
+_Question: What are the pros/cons of using DSBs vs nicks for CRISPR?_
+
+Pavel-Dinu: Nick system is still new and has room for improvement; DSBs are more mature technology. Need DSBs to deliver large payloads, although some nick-based CRISPR systems exist for payload delivery. Have to balance risk/reward of therapy to determine which method is better - endpoint effectiveness?
+
+_Question: What downstream work needs to be done to evalute screening targets?_
+
+Chakraborty: We're focused on developing transplants using stem cell biology. We don't use CRISPR engineering for target discovery; we harness its strengths to build a theraputic. Most important part of target discovery comes from biological knowledge of targets - look for KOs that yield no biological phenotype (or otherwise KO data is contaminated by biology)
+
+_Question: What approach works best for engineering cell lines for high-efficiency screening?_
+
+Przybyla: We mostly use lenti insertation at safe harbor sites to ensure we generate productive cell lines with the correct mutations.
+
+Chakraborty: We use electroporation to perform single gene mutations. We do ex-vivo insertions mostly so off-target is not an issue. Must be cautious making changes in primary sequence. Brought up imporatnce of considering heterogeneity when considering on/off-target interactions (i.e., is on-target liver? hepatocyte specifically?)
+
+_Question: What is your system for controlling for off-target effects?_
+
+Pavel-Dinu: When we develop therapies (for monogenic immune disorders), we must be very careful to not have off-target effects. High-fidelity Cas9 helps a lot, rarely find worrying off-target edits that would lead us to changing guide design. Need to watch out for translocation events with high homology targets (CCR5 vs CCR2 for example). Rarely use two guides to prevent generating two DSBs and subsequent translocations.
 
 
 
-## Talk 5 - Detection Of Mutations In Matched FFPE And cfDNA Samples
+## Talk 5 - An Introduction to Automated Genomic Workflow Solutions
 
 **Dr. Han Wei, Beckman-Coulter**
 
+Agenda:
+- Introduction to Beckman Coulter
+- Collaboration & Grant Program
+- Case study of FFPE vs cfDNA sample
+- Upcominb automated workflow solution
+
+Beckman Coulter makes many products that support life sciences research - specifically liquid handling (?)
+
+Have matched FFPE and cell free DNA samples from patients
+- circulating tumor DNA has been used for diagnostic purposes for liquid tumors (liquid biopsy)
+  - Emergent product to complement standard biopsy assay
+- FFPE slides are screened by pathologists for cancer biomarkers, often compared to matched control sample
+
+Majority of source of cfDNA is from necrotic or apoptotic cells
+- Generates wide variety of fragment sizes, but peak at 175 bp
+- Can be detected in PBMCs, allowing for easy patient monitoring
+
+DNA and RNA extracted from FFPE samples are degraded and often low quality
+- Want method that provides complete digestion with gentle lysis step
+- Beckman Coulter kit provides better RNA quality (higher >200 bp score)
+- Takeaway: chemistry is key determinant of how much nucleic acid that can be later assayed.
+
+For cfDNA, one of the largest challenges is starting materials
+- Typically 1-15 ng is most you get
+- Comparied BC kit to QIAGEN qiaamp circulating nucleic acid kit, showed better yields
+
+Wanted to measure concordance between FFPE and cfDNA samples
+- 8 pairs of matched samples, covering four cancer types
+- Used 100 ng of DNA and used IDT Library Prep Kit + Pan Cancer Hyb Panel -> NextSeq
+  - Got good coverage (>90% @ 50x)
+- Identify common set of variants from both sample types
+  - For SNVs, >95% are shared
+  - For indels, variatns are more sample-type specific, particularly for breast cancer samples
+- Used ClinVar to identify two variants in samples that were potentially pathogenic; most identified variants were not in ClinVar
+
+Showed some data suggesting that BC's new automated cell-free extraction system is significantly faster than manual extraction.
+- Upcoming end-to-end cell-free assay method claims "conversion" is better - leading to more library complexity
+  - Unclear what "conversion" means in this context
+- Uses IDT xGen cfDNA kit
 
 
 
 ## Talk 6 - Next-Generation CRISPR Screening Platforms For Insights Into Human Disease Biology
 
-**Laralynne Przybyla, UCSD**
+**Laralynne Przybyla, UCSF**
 
 
 
