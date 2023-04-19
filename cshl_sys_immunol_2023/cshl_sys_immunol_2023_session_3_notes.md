@@ -229,3 +229,33 @@ Overall: scBONITA might be worth exploring (although not clear how applicable pr
 ## Non-coding fragility within interleukin-2 feedback circuitry shapes autoimmune disease risk
 
 **Harikesh Wong, MIT**
+
+APCs like DCs present both self and non-self antigens to conventional T cells, and this system can activate T cells to self
+- Tregs can constrain autoimmune Tconv responses selectively while allowing for non-self response
+
+Tconv that get a weak self input signal from DCs release IL-2, which led neighboring Tregs to expand and constrain the input signals required for the Tconv to mount the response, leading to transient burst of proliferation followed by massive dieoff
+
+Do Tregs discriminate between self and non-self using this local feedback network?
+- Showd data suggesting weak foreign agonists caused a Treg-constrained response, while a powerful foreign agonist escaped the Treg feedback
+
+Hypothesis: it's not about self/non-self, it's about strength of signal and whether you exceed level of "feedback control" that tamps down on weak signals
+- Can imagine diseases move this threshold around and lead to different T cell responses
+
+Can genetic variation reshape the feedback boundary between self and non-self?
+
+Most common autoimmune linked variants map to non-coding immune enhancers (often cell-type selective in effect)
+- Studied IL2RA (CD25) as they had a good set of associated variants that mapped to this locus
+- KO CaRE4 enhancer and did not see differences in expression of CD25 in Tregs, but the CD4 and CD8 Tconv showed significant reduction of CD25 expression at 6h post-stim
+  - This effect disappears after 24h
+- KO CaRE3 enhancer and found that CD25 expression is reduced in Tregs (not Tconv) but effects disappear upon stimulation
+- Overall, genetic pertubations led to minor changes in expression
+
+Used multiscale model (not described) to simulate effects of IL2RA expression kinetics and found that effects of enhancer deletion become non-linear and dramatic
+- Suggests small effects in regulation can have non-linear effects in vivo
+
+Summarized in vivo data as showing that these enhancer deletions do affect the density of Tregs in pancreas of animals prone to developing T1D
+- Deletion of CaRE4 actually prevents animals from autoimmune diabetes; conversely, CaRE3 deletion (that weakens Tregs) leads to significant acceleration in the development of T1D
+
+Takeaway: small changes in parameters in feedback circuits can cause large, non-linear effects
+
+Overall: Threshold idea is interesting and relevant for autoimmunity; perhaps potentially useful for our rejection purposes as well?
