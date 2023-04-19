@@ -84,7 +84,7 @@ Sex differences are significant in response to infectious disease
 Studied longitudinally 20 female sex individuals who were undergoing F->M sex horomone treatment
 - Able to study effects of T in vivo
 - Took samples at baseline, then 3 months and 12 months post
-- All individuals showed increase of T to male ranges and decrease of E
+- All individuals showed increase of T to male ranges and no changes in estradiol
 
 Testosterone treatment led to increased signaling in TNFa via NFkB
 
@@ -110,9 +110,37 @@ Testosterone upregulates TNFa responses in monocytes and downregulates Type 1 IF
 
 **Veronika Kedlian, Wellcome Sanger**
 
-## Medicine as a continuum—Monitoring immune-age and disease progression
+T cells develop in the thymus - thymic architecture is critical for these processes
+- Cortex, medulla, and cortico-medullary junction
+- T cells enter through junction area, acquire TCRs in cortex, move to medulla where positive selection takes place
+- Resident thymic cells play a significant role in this process, such as epithelial and dendritic cells
+
+Performed spatial transcriptiomic analysis of thymus to build better single cell atlas (had previous work published in 2020, all single cell + TCRs)
+- Collected fetal thymus (11-21 wks) and pediatric thymus (0-3 y)
+- 1M cells, better T cell developmental resolution
+
+Used 10x visium to visualize foetal or pediatric thymic slices, get 50 um spot resolution for whole trancsriptome (so not quite single cell)
+- Combined data with 50-plex multicolor imaging with IBEX to get protein Data
+- Developed automated image pipeline called ImageSpot to perform thymic-level segmentation (cortex/medula/etc)
+
+Used spatial data to better define cortico-medullary axis using something called OrganAxis with distances of spots from medulla (?)
+- This was not explained well and the slides said KNN on them, so would need to examine paper
+- Appears that this was used to bin spatial data into layers
+
+Combined Visium data with protein data, then binned all cells in a layer into psuedobulk measurements
+- Showed that T cells in different stages of development (presumambly annotated by expression or protein) show abundance levels across binned tissue layers that are concordant with T cell development model (movement from junction to top of cortex to medulla)
+  - Very unclear how much the definition of T cell development (and thus annotations) is driven by the model anyway
+- Few differences between fetal and pediatric, other than potential evidence for entry of double negative T cells into cortex for fetal
+- Also annotated various types of thymic epithelial cells, which they then mapped to different tissue layers from spatial info
+  - mcTEC cells localize to capsular/subcapsular cortex in fetus but also appear in the junction area in pediatric samples
+
+Overall: It's a Teichmann lab joint so the single cell atlas aspect is well done, but its not clear how relevant any of this would be to us and the talk was less than illuminating
+
+## Medicine as a continuum — Monitoring immune-age and disease progression
 
 **Shai Shen-Orr, Technion-Israel Institute of Technology**
+
+Immune system responses vary by age.
 
 ## Systematic discovery of autoimmune disease-causal regulatory variants and their effects on T cell function
 
