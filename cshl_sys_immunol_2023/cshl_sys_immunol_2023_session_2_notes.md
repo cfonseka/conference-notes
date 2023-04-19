@@ -145,7 +145,7 @@ Immune system responses vary by age!
 - Incredibly important to understand immune system in a longitudinal manner
 
 Immune system aging (immune-age) is the first PC of human immune variation
-- Tracks with earler talk from John Tsiang
+- Tracks with earler talk from John Tsang
 
 Cohort is 135 young and older adults measured annually for 9 years
 - Performed high-dimensional cytometry using flow then CyTOF
@@ -173,6 +173,7 @@ Hypothesis: Immune-aging is a conserved process that people undego at different 
 
 Have reduced 40 marker CyTOF panel to 8-color flow
 - Signatures show high correlation between panels
+- Based on 17 different cell types or 57 gene marker panel
 
 Conclusion: we have a young immune system, reach an inflection point, switch to "old" immune system (??)
 Also included information about TimeAx - a pesudotime-based approach of modeling disease (based on what input data?) by placing patients onto a modeled continuous trajectory
@@ -182,6 +183,8 @@ Overall: This is a very Mark Davis type talk - get a ton of measurements -> use 
 ## Systematic discovery of autoimmune disease-causal regulatory variants and their effects on T cell function
 
 **John Ray, Broad**
+
+
 
 ## Identification of CD4+ T cell antigens in Sjögren's disease using TScan-II
 
