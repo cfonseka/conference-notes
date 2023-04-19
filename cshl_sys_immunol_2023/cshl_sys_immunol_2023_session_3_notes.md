@@ -108,14 +108,95 @@ Overall: This talk was about using mathematical models to understand JAK-STAT dr
 
 **Grégoire Altan-Bonne, NCI**
 
+Self/non-self discrimination by TCR signaling is a complex decision
+- TCR activation leads to multiple outputs, not just IFN
+- Choice of readout (IFNg vs IL-2 vs IL-3) can map different signaling dynamics
+
+Can think of this as TCRs reading an encoding (antigen presentation) which is then "projected" onto a signaling cascade, which is then projected into T cell outputs (primarily cytokines in this study)
+- Like neural network, you have input layer, encoding layer, and output layer
+
+Built custom robotics platform for scaling T cell activation studies
+- Standard murine system, take OT1 T cells and mix with B6 APCs
+- Measure cytokines by flow over multiple timepoints
+- generates a lot of data not amenable to simple clustering
+
+To model the dynamics of this system, turned to simple neural network
+- Input is timeseries readouts of marker (cytokine) expression
+- Want to learn if cytokine dynamics effectively encode antigen quality (type of antigen used)
+- Compresses data into latent space yielding a single parameter to quantify antigenicity (?)
+
+Claim: Model defines over six different classes of antigens
+- Latent space variable 2 has a non-linear relationship to antigen quality (as measured by EC50 from elispot)
+
+Next, went on to understand bi-valent agonism; that is, different peptides can lead to very different activation dynamics when used in combination
+
+Made mouse with degraded downstream TCR phosphorylation capability, and result is abrogation of non-monotonicity of latent space axis 2
+- Leads to a more bimodal response to different antigens - i.e., antigens lose dynamic range and either produce a strong response or don't'
+- Takeaway: signaling machinery allows for multiple levels of T cell response and more distinction between different agonists
+
+Went on to extend study to CAR-T cells, which use a combined scFV segment with CD28 intracellular domain linked to the CD3 intercellular tail for signaling
+- Claim: weak antigenic signals received through the endogenous TCR can lead to weak CAR-T activation
+
+Developed AEBS CAR-T cell, which uses self-antigen as break to prevent strong CAR-T activation,
+- Skipped through most of the data supporting this
+- Allows for using tumor neoantigens as effectors while self-antigens will reduce off-target activity
+
+Overall: The CAR-T development stuff is the most scientifically interesting but the underlying data wasn't presented; the neural network model does seem powerful.
 
 ## Organism-wide analysis of sepsis reveals mechanisms of systemic inflammation
 
 **Nicolas Chevrier, UChicago**
 
+Study inter-organ pathways and immune responses
+- Approach: perturb organ -> perform systemic phenotyping (whole genome expression) -> validate with functional tests (KO, blockade, etc)
+
+Sepsis is a systemic immune response to infection with life-threatening consequences
+- Understanding of organ-specific effects is difficult in humans, typically limited to assaying blood (difficult to biopsy septic patients)
+- No targeted therapies exist
+
+Induced sepsis through LPS and measured expression in many different tissues
+- measured timepoints 6h up to 5d post LPS injection
+- Used topic modeling to reduce dimensionality and identify gene modules of interest
+  - how is k-selection done for topic modeling?
+- Use pathway enrichment to link topics to things like LPS signaling and IFNg response
+- Also identify tissue-specific topics
+
+Asked - can cytokines explain the tissue specificity of response?
+Injected cytokines either singly or as pairs and then measured RNA expression in various tissues
+- Found that TNF + Il-18 or TNF + IFNg or TNF + IL1B recapitulate the expression changes induced by sepsis organism-wide
+
+Used single cell data to identify cell type specific gene signatures, then used that to estimate cell type abundances from tissue RNA data
+- Deconvolved 195 (!) cell types
+- Showed that certain antigen combinations recapitulated known cell type effects from infection
+
+For validation, performed sectioning of whole mice and then spatial transcriptomics on sections
+- Because Visium is only 5 mm x 5mm, had to come up with a way to grid sections
+- Somehow repurposed SNP-chip to perform section assay
+- Identified 161 cell types across 17 organs
+
+Can then ask what whole tissue changes occur after LPS injection
+- Validated that TNF + IL1B/IL18/IFNg depletes epithelial and neuronal cell types
+- Also see dysregulation of neutrophils
+
+Pairwise profiling of cytokines reveals that different tissue types have different responses, allowing for better dissection of sepsis response
+
+Identified that _Pla2g5_ is induced in gut during sepsis, apparently produced by goblet cells
+- Data showed that expression peaks in gut initially, then increases much later in kidneys/heart
+- _Pla2g5_ blockage is able to rescue septic mice
+- _Pla2g5_ KO also rescued tissue injury, even though cytokine levels were not different between KO and controls
+- _Pla2g5_ blocking led to upregulation of markers of red pulp macrophages
+  - Potentially linked to iron metabolism and RBC homeostasis
+  - Stained spleen sections for ferrous iron and found iron metabolism appears impaired in KO
+- Followup work suggests _Pla2g5_ is upregulated in human sepsis and related to increased mortality
+  -  _Pla2g5_ is released from the gut during sepsis and causes intervascular damage
+
+Overall: impressive work, especially whole organism sections.  _Pla2g5_ story appears to validate well in humans
+
 ## Executable models of pathways built using single-cell RNA seq data reveal immune signaling dysregulations in people living with HIV and atherosclerosis
 
 **Juilee Thakar, University of Rochester**
+
+
 
 ## Non-coding fragility within interleukin-2 feedback circuitry shapes autoimmune disease risk
 
