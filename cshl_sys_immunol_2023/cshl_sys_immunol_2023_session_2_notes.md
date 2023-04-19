@@ -184,7 +184,39 @@ Overall: This is a very Mark Davis type talk - get a ton of measurements -> use 
 
 **John Ray, Broad**
 
+Autoimmune disorders are highly heritable but the genetic mechanisms underpinning this remain unknown
 
+GWAS studies can help pinpoint risk loci associated with disease status
+- Fine mapping is required to differentiate the causal variant with other linked variants
+- 90% of disease-associated variants are in non-coding regions, particularly immune cell enhancers
+
+Can use DNA accessibility assays to identify putative regulatory elements in a cell-type specific manner, then looks for enrichment of disease-associated variants in open areas by cell type (LD score regression)
+- ENCODE project has done this for many cell lines
+
+Performed luciferase reporter assays to test putative casual varaints to determine effects on expression
+- Did this for 20k variants linked to autoimmune disorders in Jurkats
+- Identified pCRE (putative cis-regulatory elements) and emVAR (expression modulating variants)
+- Performed risk ratio analysis + fine mapping to find that accessible chromatin variants
+ are significantly more likely to be disease-linked (or literally, have higher hazard ratios)
+
+Identified 60 variants in accessible chromatin (Jurkats) that modulate reporter activity
+- Focus on rs72928038 which is 30 kb downstream of BACH2
+- Used base editing to confirm that risk allele downregulates BACH2
+- BACH2 maintains T naive state by repressing T cell activation, decreasing expression in effector state; phospho-BACH2 allows for AP-1 ehancer binding and T cell activation
+
+Performed 18bp deletion around BACH2 allele in mice, did co-mingling experiment, and identified decrease in freq of memory CD8 t cells and more CD8 effector cells
+- Also showed that there are less naive CD8 t cells
+- Chimeras also showed decrease in natural Treg formation in thymus (but not total Treg numbers)
+- Finally, BACH2del18 mice also have more severe EAE
+
+Want to scale this approach as making a mouse for each variant is incredibly time-consuming - made CRISPRi screen in primary human T cells
+- Transduce cells with lenti with dCas9 + KRAB
+- Showed data of screen on variants that affect T cell proliferation
+
+Showed that positive controls (IL2RB, VAV1, TBX21) are all down in proliferation, alongside other new positive regulators; also discovered negative regulators
+- Showed example of variants that targeted MYC using promoter-HiC data to link variants to regulated genes
+
+Overall: Very good talk, reminded me of the SR lab immune GWAS studies back in the day.
 
 ## Identification of CD4+ T cell antigens in Sjögren's disease using TScan-II
 
