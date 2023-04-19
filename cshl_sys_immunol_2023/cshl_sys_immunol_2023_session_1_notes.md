@@ -151,9 +151,46 @@ Overall: Interesting talk and convincing single-cell deconstruction of granuloma
 
 **Harinder Singh, University of Pittsburgh**
 
-## Simultaneous snRNA&ATACseq characterizes specific innate immune memory
+Activated B cells either generate Ab-secreting plasmablasts that result in a fast, low-affinity response or differentiate into pre-GC B cells which then undertake SHM, perform affinity maturation and can eventually lead to the development of long-lasting plasma cells
+
+Developed system for culturing primary human B cells and generating either trajectory
+- Relies on series of activation markers (first anti-IgM/CpG/CD40L/IL-2; then CD40L/IL-2/IL-4/IL-10)
+- Performed scRNA-seq on timepoints D0, D2, D4, D6
+  - 2 days required for first cell division, later timepoints can have up to 5 divisions per 2 day period
+  - Proliferation at D2, differentiation at D4 and D6 into plasmablasts/GC precursors
+  - Identified bifurcation state at between day 4 and day 6
+Functional annotation of cell states using known B cell signatures also revealed differentation into a memory B cell like phenotype
+
+Identify BCL6 and PRMD1 as master regulators of GC precursors/plasmablasts respectively; interestingly, this fate appears to be predicted by ratio of IRF4 and IRF8 (?)
+- Flow followup using those two markers and showed that naive B cells express more IRF8 than IRF4; go to double positive by Day 4, then resolve to either IRF4+ or IRF8+ populations by day 6 (although expression of the other molecule remains elevated, so more like IRF4++ IRF8+ and IRF4+ IRF8++)
+
+scVelo analysis suggests bifurcation event may be arising as early as D2 - in terms of generating intermdediates that then go down the PB or GC trajectory
+
+Attempted to assemble gene regulatory network that underlies these states, using bulk RNA-seq analyses of purified PB, GC, and naive/memory/activated B cell states alongside single cell (scRNA+BCR and scRNA+ATAC)
+- Got samples every day from D0 to D6
+- Used recently published method MIRA (topic modeling approach) - might be worth looking into for scRNA-seq work
+  - ref: Lynch et al. Nat Methods (2022)
+
+Used MIRA to perform "regulatory potential modeling" to infer which transcription factors are regulating a set of genes specific to PBs (or their binding regions are in open areas that are associated with the PB state by topic modeling)
+- Top hit was MYC so has some potential issues this is but conceptually sound
+- Didn't work as well for the GC-specific state
+
+Finally, tested hypothesis by using CRISPR to KO PRMD1 and determine how differentiation is impacted
+- Used RNPs with PRMD1 gRNAs, confirm deletion on D4 and then differentiate
+- IRF4 expression is diminished in PRMD1 KO, IRF8 expression is increased
+- PRDM1 KO reduces PB frequency and potentially increases GC frequency
+
+Questions: if you follow a single B cell clone, does it undergo this bifurcation?
+- using BCR-seq, tracked clones and showed that certain clones can be found in both PB and GC pops, indicating that they arose from the same precursor clone
+- Also saw many GC or PB specific clones, suggestive of expansion after bifurcation
+
+Overall: we should look more into topic modeling?
+
+## Simultaneous snRNA & ATACseq characterizes specific innate immune memory
 
 **Khodor Abou-Daya, University of Pittsburgh**
+
+
 
 ## Epigenetic states of germinal center B cells determined by single cell multiomics analysis can predict B cell fate
 
