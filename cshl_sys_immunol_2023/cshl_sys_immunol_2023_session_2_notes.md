@@ -74,8 +74,37 @@ Question: Do standard blood metrics (total WBC) predict immune responses? No - m
 
 **Rikard Forlin, Karolinska**
 
+Sex differences are significant in response to infectious disease
+- Male sex had increased risk of death due to COVID
+- Potential reason? Delayed type 1 IFN response is more frequent in males than females and leads to more severe disease
+- Cytokine release syndrome is also more associated with males
+- Conversely, females are overrepresented in most autoimmune disorders (SLE, RA)
+  - SLE is thought to be related to type 1 IFN dysregulation
 
+Studied longitudinally 20 female sex individuals who were undergoing F->M sex horomone treatment
+- Able to study effects of T in vivo
+- Took samples at baseline, then 3 months and 12 months post
+- All individuals showed increase of T to male ranges and decrease of E
 
+Testosterone treatment led to increased signaling in TNFa via NFkB
+
+Examined pDC population in particular - decreased frequency in response to T
+- pDCs that remained upregulated CD81, and CD81+ pDCs have been shown to have reduced type 1 IFN reponses and are thought to modulate Tregs
+- Measured response of pDCs in response to stimulation - showed reduction in IFNa responding genes after 3 mo T
+  - Most patients showed bimodal IFNa response - moderated by expression of IRF7
+ in pDCs
+- Plasma levels of IFN didn't vary with testosterone treatment, but response did
+
+ pDCs express more of the androgen receptor than other immune cells, and thus may act as sensors for blood antigens
+
+Monocytes also showed changes in response to testosterone
+- Upregulation in TNFa family proteins
+- Performed similar stimulation experiment (challenged with LPS)
+- Found that increased expression of hallmark TNFa pathway genes after treatment
+- Peformed "NicheNet" analysis on data (single cell ? - unclear) and identified receptor-ligand pairs that suggested an autocrine loop in monocytes
+
+Testosterone upregulates TNFa responses in monocytes and downregulates Type 1 IFN responses in pDCs
+- Potentially aligned with observed sex differences in vaccine response/infection
 
 ## A spatial thymus human cell atlas mapped to a continuous tissue axis
 
