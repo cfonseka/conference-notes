@@ -196,7 +196,35 @@ Overall: impressive work, especially whole organism sections.  _Pla2g5_ story ap
 
 **Juilee Thakar, University of Rochester**
 
+Interested in identifying innate/early immune signatures that drive immune/Ab response to vaccination or infection
 
+Cohort of HIV-positive patients - how does long-term infection affect people as they age?
+- Over 50% of HIV+ population is 50+
+
+HIV infection is known to increase risk of cardiovascular disease (particularly artheosclerosis)
+- HIV infection enhances the inflammatory environment - monocytes are particularly of interest as they can cross the endothelial barrier and differentiate into something plaque-like inside the vessels
+- Molecules that drive monocyte migration )PSGL-1, SELPLG, CD162) are known
+
+Performed single cell RNA on HIV cohort PBMCs to better understand signaling networks that drive molecular states
+- Cohort was 8 subjects, half with cardiovascular disease and half w/o; all males, mostly age-matched (healthier patients were younger)
+
+Developed method called scBONITA which uses single cell expression data to infer Boolean rules and perform pathway analysis
+  - Initially developed for bulk RNA seq, adapted for single cell
+  - Inputs: expression data and network topology (?)
+  - Benefit of model: can simulate effects of network (?) by "deleting" or "increasing" the importance of a node
+  - State of each node is defined by 1/0 (on/off) expression of genes, in which steady-state node represents "sink" attractor
+  - Idea: distinct cell types exhibit characteristic signaling or transcriptional patterns - just like these nodes
+
+Identified pathways related to monocytes that are dysregulated in AS HIV+ patients
+- Leukocyte transendothelial migration pathway came up, as well as cAMP signaling
+
+Next, performed "attractor" analysis on leukocyte transendothelial migration and identified dominant attractors: F11R and PECAM1
+- These genes are required for platelet adhesion to vascular endothelial cells
+
+Finally, developed tool called "WikiNetworks" for powering this tool - check Thakar-Lab github
+- Also have "multiomics" version of BONITA (mBONITA)
+
+Overall: scBONITA might be worth exploring (although not clear how applicable predefined networks will be for us); in a larger sense, these network approaches with "attractors" seem popular but people do not seem to explain them well.
 
 ## Non-coding fragility within interleukin-2 feedback circuitry shapes autoimmune disease risk
 
