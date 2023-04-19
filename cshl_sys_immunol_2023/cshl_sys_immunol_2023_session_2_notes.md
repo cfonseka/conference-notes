@@ -222,6 +222,37 @@ Overall: Very good talk, reminded me of the SR lab immune GWAS studies back in t
 
 **Mohammad Dezfulian, HMS**
 
+Difficult to link specific TCR sequences to cognate antigen due to high levels of diversity at the TCR and HLA
+
+Developed TScan, which helps identify targets of TCRs at scale
+Next, developed TScan-II to understand what antigen CD4 T cells recognize
+- Platform is sensitive enough to perform genome-wide scale screens
+- Wanted to capture endogenous antigen processing and T cell signaling; i.e., want to find antiges that can be processed and do activate T cells
+
+Developed reporter linked to GzmB activity, you have GFP linked to inactivated RFP by a GzmB cleaveage site. When GZMB cleaves the site, the RFP folds properly and expresses
+- Relies on the fact that activated CD4 T cells will secrete GzmB into presenting cell
+
+Used human peptidome library (covers 22K protens)
+- Built by tiling 90 AA windows across every ORF in genome to get 259K fragments
+- These fragments are then synthesized, cloned in-frame with the signaling peptie so that they will be properly processed and presented on class II
+
+Can load presenting cell with multiple different HLAs or a single HLA allele
+- if T cell recognizes antigen, will turn on reporter which can then be flow sorted and sequenced to resolve antigen
+- Data shown is fold change enrichment presumambly over negative control (vehicle?)
+
+Sjogren's disease is an autoimmune disorder mainly affecting exocrine (salivary and tear) glands
+- High levels of T cell infiltration into these glands, predominately clonally expanded memory like CD4 T cells
+- Ductal cells in salivary glands in these patients express class II and co-stim proteins
+- What antigens do thse CD4 cells recognize?
+
+Extracted CD4+ CD45RA- T cells from salivary gland biopsies from patients, then performed TCR seq to identify TCRs that had clonal expansion and were shared across patients
+- Then took 20 top TCRs and performed TScan-II assay and screened against peptidome with multiple HLA alleles that were in patients
+- Showed nice data that highlighted MAP3K4 as a recognized self-peptide, could use screen to identify specific HLA molecule that could load it
+- Self-antigens were *not* shared across patients  
+- Went on to show that ductal cells expressed both MAP3K4 and HLA class II
+
+Overall: TScan and TScan-II seem like powerful methods for doing large-scale TCR screening in a multiplexed fashion. 
+
 ## Microglial-specific miR-155 deletion enhances interferon- dependent response to neurodegeneration and mitigates cognitive impairment in a mouse model of Alzheimer’s disease
 
 **Kilian Kleemann, BWH**
