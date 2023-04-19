@@ -172,7 +172,6 @@ Attempted to assemble gene regulatory network that underlies these states, using
   - ref: Lynch et al. Nat Methods (2022)
 
 Used MIRA to perform "regulatory potential modeling" to infer which transcription factors are regulating a set of genes specific to PBs (or their binding regions are in open areas that are associated with the PB state by topic modeling)
-- Top hit was MYC so has some potential issues this is but conceptually sound
 - Didn't work as well for the GC-specific state
 
 Finally, tested hypothesis by using CRISPR to KO PRMD1 and determine how differentiation is impacted
@@ -225,3 +224,24 @@ Overview: potentially interesting for the team but unclear how it generalizes ou
 ## Epigenetic states of germinal center B cells determined by single cell multiomics analysis can predict B cell fate
 
 **Christopher Chin, Weill Cornell**
+
+Germinal Centers (GCs) are the basis for production of high-affinity Abs and long-lasting (humoral) immunity
+- selective step in GCs requires B cells to uptake antigen from fDCs, process, and present to Tfh cells
+  - No antigen uptake -> apoptosis
+  - Intermediate antigen presentation -> memory b cells
+  - Intermediate to high antigen presentation -> re-enter SHM process
+  - High antigen presentation -> plasmablasts -> plasma cells with high-affinity Abs
+    - This pathway is dependent on a Myc+ precursor
+
+Performed moue experiments to isolate GC B cells and got scRNA + ATAC to better understand epigenetic regulation of lineage defining TFs (known)
+
+Labeled multiomic dataset using scRNA reference, then performed pseudobulk analysis on the ATAC peaks using groups of cell types from expression data
+- Used chromVAR to quantify how accessible various TF motifs are
+- Was able to identify differential chromatin accessibility based on fate (return to dark zone, PB, or prememory)
+
+Wanted to determine when epigenetic changes occurred; RNA psuedotime analysis suggested Myc+ cells were site of bifurcation
+
+Clustering data based on expression + ATAC identifies more complicated lineage of centrocytes that are different based on eventual recycling vs plasmablast pathway
+- Unclear when TfH interaction comes into play with this model
+
+Overall: Good work (in mouse) showing supporting distinct TF binding patterns that lead to GC B cell fate determination.
