@@ -94,9 +94,34 @@ Overall: light on conclusions, surprisingly descriptive (felt like a 2016ish pap
 
 **Kaitlyn Lagattuta, HMS**
 
+Used 5' 10x sequencing to get TCRs and transcriptome for single cells
+- 123 individuals with COVID
+- Got ~350K T cells (both TCRA/B, met other single cell QC events)
+
+Identified 116 cases in which the exact same TCR sequence was observed in different individuals
+- Asked how often they ended up in the same clusters (i.e. similar transcriptional phenotypes)
+
+Used CCA to identify axes of covaraition between TCR scores and cell states
+- Uae batch-corrected PC scores as input for "cell states"
+
+Used Symphony to integrate initial dataset with additional 200K cells
+
+Identified four separate CVs that were statistically significant over null permutation
+- Good gut check, first CV pulls out NKTs and MAITs (restricted sequence, restricted expression pattern)
+- Used orthogonal data to evaluate T cell state scores and got middling results
+
+Hyopthesis: TCR memory score is capturing ability of TCR to detect general pHMC structure
+- Thus, recapitulates (to some extent) thymic selection and they show that TCR score does distinguish single positive vs double positive selected T cells
+
+10x BEAM queries dextamer staninng for individual T cells - might be useful for us/Mike C?
+
+Overall: TCRs of memory T cells are systematically different; filtering of TCRs suggests some circulating T cells are more likely to reach the memory state
+
 ## Single-cell and spatial transcriptomics reveal aberrant lymphoid developmental programs driving granuloma formation
 
 **Thomas Krausgruber, CeMM Research Center (Vienna)**
+
+
 
 ## Assembly and modeling of a dynamic gene regulatory network that regulates human B cell fate dynamics
 
