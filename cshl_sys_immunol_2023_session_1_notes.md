@@ -47,7 +47,7 @@ Learning meaningful embeddings from scATAC
   - R tool for this: ArchR
 - Other approach is to aggregate to pseudobulk to get ATAC-like profiles
 
-Proposal: map DNA-kmers from peaks and cells into same latent space
+Proposal: map DNA-kmers (8-mers + reverse complements) from peaks and cells into same latent space
 - Captures TF motif in sequence information, claim that it reduces batch
 - In latent space, push kmers from sequence under peaks towards cells in which that sequence was open (i.e., had peak)
 - Show data resolving batch effects and recapitulating hematopoesis
@@ -60,7 +60,35 @@ Proposal: map DNA-kmers from peaks and cells into same latent space
 
 **Milcah Scott, University of Minnesota**
 
+Memory resident CD8+ T cells are found pervasively throughout most tissues
+- Patrol for previously encountered pathogens and expand rapidly to secondary challenges
+- Recruit B cells, DCs, etc
+- Mouse studies have shown that Trms do not recirculate
 
+Trm cells take on tissue-specific adaptations to reside there - what are these changes?
+
+Use migration assays to study Trms, but difficult to do in human. CD69/CD103 are used as surrogate cell surface markers to identify Trms
+- However, these markers may not identify Trms faithfully in different tissue types
+
+Used CITE-Seq to analyze Trms from mice
+- Also analyzed infectivity and migration capacity
+
+Claim: tissue environment is primary driver of transcriptional heterogeneity
+
+Performed DGE either grouping Trms across tissue or for each tissue independently
+- Aggregate DGE did not work well, and they claim its because of tissue-specific adaptations
+- Instead, they suggest comparing intra-tissue (so circulating lung to lung Trm, etc)
+- They go onto to suggest there are two broad subtypes of Trms based on ICOS expression (??)
+  - Subsets are not tissue specific; both are in the salivary gland for example
+
+Talk ends with description of how to go from marker lists to flow sorting markers - this is not very novel
+- Points out protein info from CITE-seq is also helpful (seems underutilized imho)
+- Went on to map genes to markers with good Abs, significantly reduces list
+- Finally, tested markers in cohoused mice and propose the following marker definitions
+
+CD69+ CXCR6+ KLRG1(lo) CD62L(lo) = core Trm set, with ICOS and something else to differentiate.
+
+Overall: light on conclusions, surprisingly descriptive (felt like a 2016ish paper)
 
 ## Quantifying how TCR sequence variation affects T cell fate at single-cell resolution
 
