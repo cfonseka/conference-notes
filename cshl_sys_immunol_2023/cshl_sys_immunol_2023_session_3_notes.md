@@ -141,7 +141,7 @@ Developed AEBS CAR-T cell, which uses self-antigen as break to prevent strong CA
 - Skipped through most of the data supporting this
 - Allows for using tumor neoantigens as effectors while self-antigens will reduce off-target activity
 
-Overall: The CAR-T development stuff is the most scientifically interesting but the underlying data wasn't presented; the neural network model does seem powerful.
+Overall: The CAR-T development stuff is the most scientifically interesting but the underlying data wasn't presented; the neural network model does seem powerful. The implications of being able to decrease CAR-T off-target activity is intriguing but it's not clear how you would define these weak self-antigens (and what happens in autoimmune disorders?)
 
 ## Organism-wide analysis of sepsis reveals mechanisms of systemic inflammation
 
