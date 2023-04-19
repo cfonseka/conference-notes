@@ -255,6 +255,44 @@ Extracted CD4+ CD45RA- T cells from salivary gland biopsies from patients, then 
 
 Overall: TScan and TScan-II seem like powerful methods for doing large-scale TCR screening in a multiplexed fashion. Unclear how engineering changes to APCs/T cells affect applicability of results
 
-## Microglial-specific miR-155 deletion enhances interferon- dependent response to neurodegeneration and mitigates cognitive impairment in a mouse model of Alzheimer’s disease
+## Microglial-specific miR-155 deletion enhances interferon-dependent response to neurodegeneration and mitigates cognitive impairment in a mouse model of Alzheimer’s disease
 
 **Kilian Kleemann, BWH**
+
+microRNAs are typically non-coding
+- 22 nt in length, non-coding RNAs
+- miRNAs are quite conserved across species
+- undergo complex maturation process before being exported to cytosol and lead to degradation or inhibit translation of mRNAs
+
+miRNA-155 (miR-155) is a microRNA that has ben linked to innate immune cells and inflammation
+- expression of miRNA-155 is induced during macrophage activation with LPS
+- miR-155 is linked to being driven by APOE in microglial neurodegeneration downstream of trem2 signaling
+  - Trem2 KO reduces both APOE and miR-155 expression in microglia
+- Targeting miR-155 in mouse ALS model improves disease progression
+
+miR-155 is found elevated in CSF and tissue of Alzheimer's patients
+- Studies have shown conflicting results from miR-155 deletion and overexpression
+
+Performed mouse experiment where miR-155 was conditionally KOed in murine ALS model (APP/PS1)
+- Expression of miR-155 was dramatically increased in disease state and reduced in conditional KO (obviously)
+- Looked for other genes that were affected by KO and identified increase in genes known to mark microglia that fight (?) amyloid pathology
+- Interestingly, APOE expression increased in the miR-155 KO
+- Showed increases io scores for pathways for microglial phagocytosis + antigen presentation; suggests Clec7a+ microglia are eating plaques
+- Showed that IFN signaling is increased in miR-155 KO (weak data)
+
+Used public database of miR-155 targets to identify potential downstream players
+- Find that STAT1 is inhibited by miR-155 and thus KO increases STAT1 and IFN signaling
+- STAT1 was also strongly linked to disease severity in murine modeled
+
+Use single cell data to imply that miR-155 KO primes microglia to transitioning towards a more disease-resistant phenotype through IFNg signaling
+- Subclustering led them to define early and late IFNg-responsive microglial subtypes - don't express genes associated with microglia activation
+- Showed some psuedotime data that was not particularly interesting
+- Did confirm by IF that miR-155 ablation lead to increased STAT1 expression in microglia
+
+FACS data revealed that Clec2d+ microglia may exist in poised state in WT prior to initiation of amyloid disease
+- Clec2d has been shown to recognize histones released upon cell death
+
+
+Showed reporter assay that validated IFNg/STAT1 connection to miR-155 deletion
+
+Bottom line: microglia take up more plaques and reduce plaque size, improve mice cognition in miR-155 deletion
