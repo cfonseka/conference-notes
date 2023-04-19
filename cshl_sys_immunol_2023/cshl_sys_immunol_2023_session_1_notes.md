@@ -190,7 +190,37 @@ Overall: we should look more into topic modeling?
 
 **Khodor Abou-Daya, University of Pittsburgh**
 
+Immune allorecognition - transplantation studies done in mice mostly
 
+When you have an MHC1/SRP1a mismatch, you get monocyte activation which forms memory monocytes which can then differentiate into DCs and activate T cells
+
+Aim: How is monocyte memory generated?
+
+Introduced allogeneic monocytes into a RAG- mouse and then performing snRNAseq with ATAC
+- identifies four monocyte subtypes (N1-4); Ly-6C expression differentiates the groupings
+
+N1 group was enriched for cell cycle genes, N2 was transitional phase, while N3 and N4 showed expression patterns that indicated differentiation into APCs
+
+N1 monocytes expressed PIR-A, which is required for memory monocyte formation
+- Also showed that N1/Ly-6C high monocytes were dividing
+
+Subclustering of N2 revealed 3 subclusters, which were called C1-C3
+
+Used psuedotime method that uses both ATAC and scRNA (based on scVelo) to get "flow" of differentiation
+- Suggested influx of N1 cells on day 7
+- Other psuedotime methods are used to suggest N1 grouping is source of monocytes after "allostimulation"
+
+Showed more unconvincing psuedotime data with "flow" arrows
+
+Used tool called Dictys to infer gene regulatory netowrks to identify TFs that were more specific for each of the N1-N4 groups.
+- This data was also presented messily; conclusions are that there are different pathways activated at different times in different groups
+  - Claim: D0 has only homeostatis pathways, "restrictive pathways" are downregulated post D0 unless PIR-A is broken, memory formation + maintenance pathways are differentially active in N1 monocytes at late timepoints
+
+Conclusions: N1 cells use PIR-A to downregulate blocking TFs that block mono to DC transition, thus yielding APC generation
+- Claim: ATAC state is passed down from N1 state to progeny
+- Claim: Subset of monocytes in spleen that respond to allogeneic non-self
+
+Overview: potentially interesting for the team but unclear how it generalizes out of mice. We should look into memory monocytes in our data; all the trajectory stuff is very shaky.
 
 ## Epigenetic states of germinal center B cells determined by single cell multiomics analysis can predict B cell fate
 
