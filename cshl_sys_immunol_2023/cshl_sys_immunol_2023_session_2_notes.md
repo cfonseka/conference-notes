@@ -227,7 +227,9 @@ Difficult to link specific TCR sequences to cognate antigen due to high levels o
 Developed TScan, which helps identify targets of TCRs at scale
 Next, developed TScan-II to understand what antigen CD4 T cells recognize
 - Platform is sensitive enough to perform genome-wide scale screens
-- Wanted to capture endogenous antigen processing and T cell signaling; i.e., want to find antiges that can be processed and do activate T cells
+- Wanted to capture endogenous antigen processing and T cell signaling; i.e., want to find antigens that can be processed and do activate T cells
+- Uses reverse-engineered 293 cells to behave more like APCs (need to check paper for details)
+- Use engineered CD8 cells that have been modified to take up CD4 TCRs and express GzmB; also introduced CD4 coreceptor and had to stabilize TCRs (?)
 
 Developed reporter linked to GzmB activity, you have GFP linked to inactivated RFP by a GzmB cleaveage site. When GZMB cleaves the site, the RFP folds properly and expresses
 - Relies on the fact that activated CD4 T cells will secrete GzmB into presenting cell
@@ -251,7 +253,7 @@ Extracted CD4+ CD45RA- T cells from salivary gland biopsies from patients, then 
 - Self-antigens were *not* shared across patients  
 - Went on to show that ductal cells expressed both MAP3K4 and HLA class II
 
-Overall: TScan and TScan-II seem like powerful methods for doing large-scale TCR screening in a multiplexed fashion. 
+Overall: TScan and TScan-II seem like powerful methods for doing large-scale TCR screening in a multiplexed fashion. Unclear how engineering changes to APCs/T cells affect applicability of results
 
 ## Microglial-specific miR-155 deletion enhances interferon- dependent response to neurodegeneration and mitigates cognitive impairment in a mouse model of Alzheimer’s disease
 
