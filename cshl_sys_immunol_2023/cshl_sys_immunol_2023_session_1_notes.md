@@ -121,7 +121,31 @@ Overall: TCRs of memory T cells are systematically different; filtering of TCRs 
 
 **Thomas Krausgruber, CeMM Research Center (Vienna)**
 
+Focus of lab is on structural cells (particularly epithelial, endothelial, and fibroblasts) and how they participate in the immune response
 
+Granulomas are aggregates of immune + structural cells in the skin - good place for studying
+
+Sarcoidosis is a chronic, non-infectious disease in which granulomas form in the skin and lung, although can affect other organs
+- No treatment options available
+- What is the role of immune cells in this disease? Do altered cell-cell interactions affect granuloma propagation?
+
+Performed skin biopsies on netural skin + lesional skin (with granulomas) on 12 patients with sarcoidosis and performed IF + scRNAseq
+
+Identified lesional-specific CD4 Th cells, fibroblasts, and macrophages
+- Validated presence of these cell types via staining; recapitulated granuloma structure with fibroblasts ringing immune cells
+- Identified gene signatures for these cell types and then projected signatures onto spatial transcriptomics data
+
+Goes on to talk about characterizing fibroblasts specifically, find both immune-interacting and tissue-remodeling fibroblasts
+- FAP is highly expressed in the tissue-remodling subset
+- Found that tissue-remodeling fibroblasts are found mostly within the granuloma (based on projecting signatures onto Visium data)
+  - Validated with staining FAP
+- Found that tissue-remodeling fibroblasts had expression of innate-like related TFs (?)
+
+Used scRNA-seq to build cell-cell interaction network (ligand-receptor pairs), then evaluated colocalization in Visium data
+- Used this to reduce number of ligand-receptor pairs
+- Identified sets of pairs that were higher up in granulomas than other tissue
+
+Overall: Interesting talk and convincing single-cell deconstruction of granuloma structure - unclear if this is relevant to us.
 
 ## Assembly and modeling of a dynamic gene regulatory network that regulates human B cell fate dynamics
 
