@@ -140,7 +140,44 @@ Overall: It's a Teichmann lab joint so the single cell atlas aspect is well done
 
 **Shai Shen-Orr, Technion-Israel Institute of Technology**
 
-Immune system responses vary by age.
+Immune system responses vary by age!
+- Nothing in medicine makes sense except in the lite of time - i.e., we often ignore/underestimate the effect of time on biology
+- Incredibly important to understand immune system in a longitudinal manner
+
+Immune system aging (immune-age) is the first PC of human immune variation
+- Tracks with earler talk from John Tsiang
+
+Cohort is 135 young and older adults measured annually for 9 years
+- Performed high-dimensional cytometry using flow then CyTOF
+- Allows them to assay 72 cell types
+- Can create matrix of cell type frequency by individual over time by stiching together samples
+- Interestingly, they cluster without age information and build diffusion map based on celltype frequencies
+  - Find that younger individuals cluster on one edge, but age-based variation decreased across other diffusion component
+  - Cytokine response scores decrease with increase along pesudotime axis
+
+What is the pesudotime axis? Made up of cell type frequency variation data
+- Weirdly, they show that things align across this axis (because it is literally created from it)
+
+Using this data, they create an "IMM-AGE" score that is a gene expression score derived from their psuedotime axis (how?) and applied to Framingham Heart cohort
+- Found survival differences correlated by IMM-AGE score by kaplan-meier
+  - Didn't show cutoff for high/low IMM-AGE score dichotomy
+- strong claim: predicts all-cause mortality better than other epigenetic scores (??)
+
+Hypothesis: Immune-aging is a conserved process that people undego at different rates
+- Small Mark Davis study in Front. Immunol. shows that bangladeshi children (1-3 y) had IMM-AGE scores more comparable to US 30 year olds than US 1-3 y
+  - Again, unclear how this score is being measured by CyTOF (cell frequencies presumambly)
+- Examined 27 health care workers who were COVID-naive and measured their "IMM-AGE" score during response to Pfizer vaccine
+  - Chronological age and IMM-AGE show moderate correlation (r = 0.49
+  - There are significant differences in immune cell population frequencies in response to vaccine - they go onto stratify cell types by whether they change in frequency across the IMM-AGE axis
+  - Claim: IMM-AGE better predicts immune response than chronological age
+
+Have reduced 40 marker CyTOF panel to 8-color flow
+- Signatures show high correlation between panels
+
+Conclusion: we have a young immune system, reach an inflection point, switch to "old" immune system (??)
+Also included information about TimeAx - a pesudotime-based approach of modeling disease (based on what input data?) by placing patients onto a modeled continuous trajectory
+
+Overall: This is a very Mark Davis type talk - get a ton of measurements -> use a overly simple modeling approach -> make grand conclusions. The conceptual idea that a composite score based on immune cell type frequencies in an individual might better predict immune response than chronological age on its own is sound, but the data shown here are not particularly convincing and the IMM-AGE score itself is not well defined (is it based on 72 cell type frequencies? expression scores? how do the two correspond?)
 
 ## Systematic discovery of autoimmune disease-causal regulatory variants and their effects on T cell function
 
