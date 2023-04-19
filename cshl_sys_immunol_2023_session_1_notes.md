@@ -31,13 +31,36 @@ Used scATAC to identify differences between lining/sublining acivated/resting sy
 Found that inflamed lining fibroblasts do indeed express STAT1 phospho downstream of IFNg signaling
 
 Wanted to use spatial data but ran into issue - Visium is not quite single cell (~10-30 cells/spot)
-- 
+- Presence of T cells and B cells can be confirmed by IF, but difficult to map spatial to immune references
+- Used "topic modeling" to deconvolve spatial data
 
+Topic modeling approach: documents = spots, words = genes, topics = gene expression programs (hopefully represent cell types)
+- Advantage: atlas-free deconvolution
+- Requires manual annotation of each "topic"; however, can model topic posterior probabilities onto spatial map for better understanding
+- Use this approach to identify macrophage "topic" that colocalizes with activated lining
+- Initially ran deconvolve using LDA, have since switched to a variational autoencoder
 
+Overall interesting, but I wonder how much of this is anchored by good IF staining of the fairly structured system of the synovium.
+
+Learning meaningful embeddings from scATAC
+- Typically end up with sparse cells x peaks matrix (similar to scRNAseq) and then perform dim red + clustering
+  - R tool for this: ArchR
+- Other approach is to aggregate to pseudobulk to get ATAC-like profiles
+
+Proposal: map DNA-kmers from peaks and cells into same latent space
+- Captures TF motif in sequence information, claim that it reduces batch
+- In latent space, push kmers from sequence under peaks towards cells in which that sequence was open (i.e., had peak)
+- Show data resolving batch effects and recapitulating hematopoesis
+  - Used method called Palantir to identify pseudotime and backup their UMAP
+- I would try it to batch-correct/cluster scATAC data if we had any, but unclear how good method actually is
+  - Evidence was mainly visual and not statistical
+  - Showed scalability to 720K cells without any runtime information so who knows
 
 ## Single cell molecular readouts coupled with migration assays to test unifying core tissue resident memory CD8+ T cell identity
 
 **Milcah Scott, University of Minnesota**
+
+
 
 ## Quantifying how TCR sequence variation affects T cell fate at single-cell resolution
 
