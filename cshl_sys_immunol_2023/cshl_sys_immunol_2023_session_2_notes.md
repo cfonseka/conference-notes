@@ -178,7 +178,7 @@ Have reduced 40 marker CyTOF panel to 8-color flow
 Conclusion: we have a young immune system, reach an inflection point, switch to "old" immune system (??)
 Also included information about TimeAx - a pesudotime-based approach of modeling disease (based on what input data?) by placing patients onto a modeled continuous trajectory
 
-Overall: This is a very Mark Davis type talk - get a ton of measurements -> use a overly simple modeling approach -> make grand conclusions. The conceptual idea that a composite score based on immune cell type frequencies in an individual might better predict immune response than chronological age on its own is sound, but the data shown here are not particularly convincing and the IMM-AGE score itself is not well defined (is it based on 72 cell type frequencies? expression scores? how do the two correspond?)
+Overall: This is a very broad talk - get a ton of measurements -> use a overly simple modeling approach -> make grand conclusions. The conceptual idea that a composite score based on immune cell type frequencies in an individual might better predict immune response than chronological age on its own is sound, but the data shown here are not particularly convincing and the IMM-AGE score itself is not well defined (is it based on 72 cell type frequencies? expression scores? how do the two correspond?)
 
 ## Systematic discovery of autoimmune disease-causal regulatory variants and their effects on T cell function
 

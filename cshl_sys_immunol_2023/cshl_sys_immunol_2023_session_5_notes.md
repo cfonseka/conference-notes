@@ -114,6 +114,59 @@ Overall: Highly-engineered system that has potential research use (and the fusog
 
 **Mark Davis, Stanford**
 
+Humans are very different from mice!
+- many mouse models fail to yield clinically relevant information
+- many vaccines optimized in mice fail in human cohorts
+  - "Mice are very vaccine friendly - almost always get a huge response"
+- significant differences in immune architecture
+- lack of genetic heterogeneity in inbred strains
+- lack of microbial and disease experience
+- differences in longevity and fecundity
+
+When is a model not a model? When it is not predictive
+
+Made good point that often, when vaccine trials fail, it's difficult to understand why and iterate
+
+Need good model system to go into depth and define immune responses, but even humanized mice can only provide partial answers
+- Want to build entirely human system that is open to experimental manipulations
+
+In celiac patients and in EAE murine system, CD4 and CD8 T cells appear in waves following gluten challenge
+- CD4 cells are autoreactive and pathogenic, while the CD8 cells seemed to kill the CD4s
+- Increased frequency of KIR+ CD8+ T cells correlates with disease severity
+- SLE and MS patients have elevated Kir+ CD8+ T cells - called CD8 T regulatory cells
+  - Claim: We see these cells in every autoimmune disorder we've looked at
+
+Hypothesis: KIR+ CD8 T cells exist to suppressive autoreactive cells
+
+Study design: made murine KO of KIR (_Klra6_ in mice) and found that KO prevented CD8 regulatory cells from appearing; these mice went on to display autoimmune phenomena
+
+How do we define the specific roles of CD4 and CD8 regulatory T cells?
+
+Developed system for creating tonsil organoids in a dish
+- Used tonsil sections from patients without tonsilitis
+- Made single cell suspensions from tissue samples
+- Found that tonsil organoid is able to make both germinal centers but also produce antibody in response to vaccine
+
+Next study: isolated T cells from tonsils and KO-ed FoxP3, then tested how T cells behaved after removing native ones from organoid
+- FoxP3 KO led to tonsils producing autoantibodies upon stim with live attenuated flu vaccine or vaccine + autoantigens (PR3, snRP, histone, dsDNA)
+- GZMB KO was used as control for CD8 T reg capability (why?), did not show dramatic effects
+- Did observe significant sex bias from source of tissue - female donors had stronger production of autoantibodies
+- Antibodies produced in FoxP3 KO have higher binding affinities than wildtype
+
+Takeway: CD4 Tregs are gatekeepers for antibody affinity (B cell tolerance), but not so much CD8 Tregs (which handle T cell tolerance)
+- conversely attenuating GZMB leads to proliferation of autoreactive CD4s and CD8s
+
+To further understand immune tissue biology, have collected and banked >30 spleens from donors
+- Typically discarded during harvesting + transplant
+- Also attempting to get paired skin, blood, and lung samples from same donors
+- Also working on murine spleen organoid model
+
+Spleen organoids are more quiescent than tonsils, but give stronger responses to live attenuated flu vaccine (in terms of Ab production and plasmablast proliferation)
+- Next steps are to perform co-culturing experiments between spleen and other tissues
+
+Overall: Good talk but light on in-depth data, organoids are a popular way of getting a maniputable system. Agree that mice data is unlikely to be very useful in human immunology
+
+
 ## Antibody-lectin chimeras for glyco-immune checkpoint blockade
 
 **Jessica Stark, Stanford**
