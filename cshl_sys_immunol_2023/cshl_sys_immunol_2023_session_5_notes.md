@@ -46,6 +46,37 @@ Overall: Interesting work, but unclear how much results would translate out of t
 
 **Greg Allen, UCSF**
 
+Lab focus: synthetic immunology can allow us to understand biological systems
+- Engineer cells, place them in a tumor microenvironment, and see what happens
+
+Want to move CAR-T cell therapy away from using CARs to using synthetic notch receptors, in which the extracelullar side has an scFv to the target and the intracellular side that has an engineered TF that can turn on any output
+
+CAR-T cells have worked well against liquid biopsy, but fail 90% of the time against solid tumors
+- Solid tumors have evolved to escape the adaptive immune system
+
+Goal: engineer cells to make their own cytokines (IL-2)
+- IL-2 is strong promoter of T-cell activation/proliferation/differentiation
+- Instead of giving IL-2 systemically, engineer T cells to recognize tumor antigen (targeted CD19 in exp) which will then use notch receptor to turn on synthetic IL-2 production
+  - Idea is that cells producing IL-2 will then take it up and proliferate, causing a positive feedback loop that is spatially controlled by the tumor antigen
+
+In murine model, tested CAR-T and CAR-T + synthetic IL-2 edit for ability to clear orthotopic pancreatic cancers
+- Found that tumor volume dropped dramatically and survival went to 100%
+- Claim: unlike systemic dosage of IL-2, much safer and unlikely to cause systemic effects
+
+Microscopy revealed that IL-2 circuit helps tumors to infiltrate solid tumor (which just CAR T cells are unable to do)
+- Claim: Only affecting T cell function based on CyTOF data (not shown)
+- Both CAR and native T cells expanded, but naive cells don't appear to be activated and instead appear to take on a naive phenotype
+  - Hypothesis: are these antigen inert cells playing a "sink" role to take up IL-2 and tamp down on feedback without secreting IFNg
+
+Claim: because IL-2 is under synthetic control, avoids suppressive effects from normal regulation
+
+Able to differentiate between paracrine or autocrine dependence for IL-2 production by either testing CAR + syn in a single cell vs in different cells
+- Found that paracrine setup led to T cell recruitment but no T cell cytotoxcity in immune-healthy mice; conversely, it worked in immune-compromised mice which backs up idea that native cells serve as sink
+
+Takeaways: IL-2 production must be inducible/tumor-triggered, orthogonal to native pathways, occur in an autocrine fashion, and selectively self-signal
+
+Overall: Really cool idea to use synthetic receptors to control gene expression and particularly interested that IL-2 of all molecules has such a strong effect; just not clear how to translate these findings to our work
+
 ## Engineering RNA export for measurement and control of living cells
 
 **Felix Horns, CIT**
