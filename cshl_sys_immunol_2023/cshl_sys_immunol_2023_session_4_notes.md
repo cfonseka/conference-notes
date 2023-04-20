@@ -1,4 +1,4 @@
-combinatorialrecommendsactivityunderstanding# CSHL Systems Immunology 2023 - Session 4
+responsecombinatorialrecommendsactivityunderstanding# CSHL Systems Immunology 2023 - Session 4
 
 **Cellular Dynamics, Interactions, and Communication**
 *Thursday, 20 April*
@@ -225,3 +225,31 @@ Overall: SimDrop seems like a good approach for reducing combinatorial issues in
 ## Dissecting the cellular events that control swarming dynamics of neutrophil populations
 
 **Katharina Glaser, Max Planck**
+
+Neutrophils are sentinel cells of the innate immune system, circulate through blood and can enter tissue to detect tissue damage, cell death, and pathogens
+- Undergo distinct migration behavior called swarming
+- Swarms can be persistent (like around a wound) or tmeporary
+
+Swarming behavior is controlled by LTB4, which amplifies swarming response
+- LTB4- neutrophils lack swarming behavior
+
+Neutrophil swarming depends on a cell self-amplification loop - yet somehow swarming does stop at point (as it causes collateral tissue damage)
+- Is this also internally controlled?
+
+Examined GPCR-Kinases (GRKs) in neutrophils
+- Showed that GRK2- neutrophils will migrate linearly without stopping, while WT swarms stop after some time
+- GRK2- neutrophils also fail to form tight clusters
+- GRK2- neutrophils result in to impared bacterial containment
+
+Suggests swarming and swarming inhibition are both self-organized controls from neutrophils
+
+Created experimental system that allowed for swarming behavior to be assayed on a chip, allowing for high-throughput screening and alternative imaging approaches
+
+Neutrophils are though to be highly glycolysis-dependent for metabolism
+- Showed images of neutrophils taking up glucose; however, glucose uptake is dispensible to swarming
+- Neutrophils can use glycogen for energy storage as well, which can be fed into the glycolysis pathway
+  - Abolition of glycogen prevents swarming behavior even in presence of glucose
+
+Conclusions: neutrophil swarming is a self-organizing response with specific metabolic requirements (glycogenolysis)
+
+Overall: Nice description of neutrophil migration behavior
