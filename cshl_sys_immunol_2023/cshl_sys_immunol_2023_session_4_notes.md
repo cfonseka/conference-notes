@@ -1,4 +1,4 @@
-recommendsactivityunderstanding# CSHL Systems Immunology 2023 - Session 4
+combinatorialrecommendsactivityunderstanding# CSHL Systems Immunology 2023 - Session 4
 
 **Cellular Dynamics, Interactions, and Communication**
 *Thursday, 20 April*
@@ -189,11 +189,38 @@ Also interested in cell-cell communication
 Ended with looking at host-microbiome interactions using Visium data adapted to align from multiple species (looked at mouse gut slides)
 - Tried to identify host-microbiome interactions but it was very challenging
 
+Overall: Good talk, pointed out that there's a huge glut of new sc methods, but without good ground truths it's really difficult to truly benchmark how well they work
+
 ##  Microscale combinatorial stimulation of human myeloid cells reveals inflammatory priming by viral ligands
 
 **Miguel Reyes, Broad**
 
+Many of the advancements in systems immunology have been driven by advances in throughput and resolution from single cell methods
+- Started to define disease-associated transcriptional states in humans
+- How do we follow up on these findings experimentally?
 
+Two typical approaches: go to relevant animal model and try to find analogue of human state OR take precursor cell and provide factors to try and push it into transcriptional state found in disease
+- Second method helps identify drivers that push cells into disease-associated state
+
+Want to try to find the sets of factors that can push cells towards these disease-states, but there are a significant amount of factors and combinatorial space to screen
+- scRNA has reached high enough throughput to do these types of screens (caveats, 50-1000 cells/condition, roughly 40-80 perturbations, either single or double combinations)
+
+Developed technology called StimDrop = cell hashing + droplet arrays
+- Take set of pre-stimulated cells and label with barcode A, then take second set of cells with activation stimuli labeled with barcode B, then plate on microwell array with room for two droplets
+- Thus cells are activated and labeled by barcodes A and B
+- Reduces operational complexity
+
+Used this to profile monocytes primed with one set of ligands and then challenged with a second ligand
+- Primed monocytes with 21 ligands in 3 concentrations
+- Challenged with 7 ligands at 1 concentration
+- Cells end up labeled by both priming condition and challenge condition
+- Use NMF to identify gene programs, found an inflammatory program driven by NFkB
+- Found that anti-viral priming led to persistent expression of anti-viral program 7 days later
+- Priming monocytes with viral DNA (poly dA:dT) leads to more production of TNF in response to later LPS challenge
+- Identified set of genes that are uniquely unregulated in viral-primed monocytes
+  - Some of these genes were elevated in patients with severe COVID
+
+Overall: SimDrop seems like a good approach for reducing combinatorial issues in performing these types of screens
 
 ## Dissecting the cellular events that control swarming dynamics of neutrophil populations
 
