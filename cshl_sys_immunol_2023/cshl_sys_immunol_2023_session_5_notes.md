@@ -108,6 +108,8 @@ Showed data where they added a fusogen (viral method of entry) to vesicle by co-
 - System had CRE as cargo, allowing for visualization of RFP in reportor cells if CRE is properly exported and imported
   - Saw efficiency rates of 50%
 
+Overall: Highly-engineered system that has potential research use (and the fusogen angle is obviously a therapeutic modality of interest for many groups) but it's too far from biology for our purposes
+
 ## Regulatory T cell subsets in autoimmunity, immune organoids, and analyzing T cell responses at scale
 
 **Mark Davis, Stanford**
