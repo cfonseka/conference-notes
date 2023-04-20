@@ -1,4 +1,4 @@
-# CSHL Systems Immunology 2023 - Session 4
+understanding# CSHL Systems Immunology 2023 - Session 4
 
 **Cellular Dynamics, Interactions, and Communication**
 *Thursday, 20 April*
@@ -74,11 +74,39 @@ Overall: Interesting talk and it's cool to see experimental data line up so well
 
 **Ece Eski, OSHU**
 
+Need to be able to distinguish indolent vs aggressive prostate cancers
+- Want to avoid unnecessary biopsies and treatments
+- Need better understanding of early tumor biology
 
+Current approach: use H&E staining to grade tumor from 1-5
+- This is insufficent, as many important markers are missed by H&E staining
+
+Study heterogeneity of cell types and interactions between cancer and stromal cells in prostate cancer
+- Can use single cell ATAC, but you get low number of cells and little to no spatial information
+- Conversely, protein-based imaging (Cyclic IF) tools can recover more cells and spatial information
+ - Allows for capturing >30 proteins on single-tissue FFPE sections on a subcellular level
+ - Using AI segmentation, can get ~700,000 cells per slide
+
+Study of prostate cancer samples from grade 3 and grade 4, alongside tumor adjacent normal tissues
+- Found that Mast cells are present in high fractions in localized prostate tumors
+  - 2 Mast cell clusters -> differentiated by expression of CD44, CD90, AR, and GZMB
+
+Generated Voronoi tessellations to understand spatial interactions between the two Mast cell pops and tumor cells
+- Found that GZMB+ Mast cells spatially interact with M2 macrophages in the tumor
+- Found that AR+ mast cells interacted with Tregs in prostate tumors
+
+Using 32 marker imaging, create neighborhoods (20 neighbors) and count cell type frequencies in each local neighborhood
+- Identified significant differences in AR receptor expression between neighborhoods in stromal cells
+- Then went back to scATAC -> topic clustering -> Identified that DAR (differentially accessible regions) were enriched for genes that enrich for NFkB signaling by GO
+- AR+ stromal cells showed increased expression of HIF1a
+
+Overall: Nice talk, but not particularly relevant for us.
 
 ## Exploring the regulation of macrophage heterogeneity across tissue contexts
 
 **Kathryn Miller-Jensen, Yale**
+
+
 
 ## Knowledge-based machine learning to extract molecular mechanisms from single-cell and spatial multi-omics
 
