@@ -81,6 +81,33 @@ Overall: Really cool idea to use synthetic receptors to control gene expression 
 
 **Felix Horns, CIT**
 
+Focus: engineering cells to export RNA to help measure the dynamic states of immune cells
+- Current methods tend to provide "snapshots"
+
+RNA allows us to read and write cell states - however, current RNA analysis methods -destroy cells
+- Similarly, RNA has theraputic potential, but difficult to target properly
+
+RNA export systems initially reverse-engineered RNA virus by expressing capsid to produce virus-like particles and developing Gag-MCP system that has binding sites for cognate signaling molecule (tag that allows for selective export of cargo)
+- Showed data that this system is sufficient for exporting the cargo RNA into the supernatant - imporantly, only cargo and not untagged mRNAs
+
+Revised system moved away from viral-like particles and to engineered protein nanocages
+- Nanocages are made up of engineered proteins that self-assemble
+- Nanocages can be tagged for export and will be exported via extracellular vesciles
+- Nanocage design is large enough for RNa export
+
+Interestingly, both VLP or nanocage system are protected from degradation by RNase (unless detergent is used to disrupt vesicles)
+
+Proof of concept experiment: Cell labeling by exporting and sequencing RNA barcodes
+- Had to do some engineering but as able to insert exportable barcode into cells
+- Thus, can monitor growth and death of different clones in non-destructive fashion (by sequencing what ends up in the supernatant)
+- Did this experiment on selective media and monitored population dynamics
+
+Takeaway: non-destructive monitoring of cell population dynamics
+
+Showed data where they added a fusogen (viral method of entry) to vesicle by co-expressing it with other delivery components
+- System had CRE as cargo, allowing for visualization of RFP in reportor cells if CRE is properly exported and imported
+  - Saw efficiency rates of 50%
+
 ## Regulatory T cell subsets in autoimmunity, immune organoids, and analyzing T cell responses at scale
 
 **Mark Davis, Stanford**
