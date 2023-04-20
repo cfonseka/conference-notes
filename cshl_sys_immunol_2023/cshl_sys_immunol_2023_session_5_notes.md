@@ -200,3 +200,31 @@ Overall: Cool idea for anti-cancer therapies, and it seems like the bivalent mol
 ## A lymph node slice culture model to characterize T cell activation dynamics and anti-viral responses in human tissue
 
 **Alex George, Columbia**
+
+The lymph node is a highly-organized structure with distinct niches where cell-to-cell signaling occurs to facilitate adaptive immunity
+
+Typically, APCs activate T cells through presentation (signal 1) combined with co-stim (signal 2) and cytokine release (signal 3)
+- Can stimulate via a-CD3/aC-CD28 or using APCs (CytoStim)
+
+Idea: Use static lymph node slice cultures to interrogate immune signaling in preserved lymph node microenvironment
+- Human tissues obtained during organ donation from "relatively" healthy individuals
+
+Compared slice-based to liquid-suspension culture for lymph nodes to understand transcriptomic differences between experimental modalities
+- Workflow: dissect LN -> embed in aragose -> generate slices -> culture via membrane-permeable transwells
+- Also used liquid cultures to get single cell readouts under different stim conditions -- performed CITE-seq on single cell suspensions to get protein expression readout
+
+By H&E, lymph slices preserve hallmark features of lymph node; slices also matched up with liquid culture in terms of cell type frequencies
+
+Slice cultures are capable of inducing activation markers - seemed very inconsistent based on data shown
+- Liquid culture activates much more strongly and consistently
+  - Presumably due to better diffusion of stim in liquid
+
+In unstim, slice culture T cells appear more activated than liquid culture unstim T cells (which seems bad??)
+- Cytotoxic signature at rest in slice culture is observed - why?
+
+Hypothesis: spatial organization of lymph node places CD4 T cells closer to B-T zone and closer to Tregs, while CD8 T cells lie deeper in the paracortex
+- Other hypothesis: residual APCs and stromal cells in slice maintain cytotoxic CD8 phenotype
+
+Next steps: perform spatial transcriptomics on slide cultures; use microfluics to improve perfusion of slice cultures
+
+Overall: This talk felt very preliminary and was primarly methods-based
