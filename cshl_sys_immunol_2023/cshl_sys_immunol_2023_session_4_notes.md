@@ -1,4 +1,4 @@
-understanding# CSHL Systems Immunology 2023 - Session 4
+recommendsactivityunderstanding# CSHL Systems Immunology 2023 - Session 4
 
 **Cellular Dynamics, Interactions, and Communication**
 *Thursday, 20 April*
@@ -147,9 +147,53 @@ Overall: This was very relevant in terms of understanding cell-cell communicatio
 
 **Julio Saez-Rodriguez, Heidelberg**
 
+Lab works on single cell methods - tools presented are available on lab github (saezlab.github.org)
+
+Developed knowledge database called Omnipath (omnipathdb.org)
+- Comparable to knowledge graph for machine learning approaches
+- >1K TFs, and >45K TF-gene interactions listed
+
+Typically analyze gene regulatory networks by analyzing TF-target interactions using transcriptomic approaches
+- Learn relationships between different genes
+- Some methods also include TF motif info (SCENIC)
+
+What can you do with this information?
+- Can estimate activity of TFs from activity of regulated targets
+
+**decoupleR** - performs many types of TF enrichment algorithms at once
+
+Takeaway: Look (and cluster) data based on inferred TF activity and not expression of TFs alone
+
+Then, scATAC data came along and algorithms adapted to use open chromatin regions to refine inferred activity
+
+How do we evaluate whether a GRN is correct?
+- Does it have tissue specificity, cooperation and predit gene expression
+- GRNs should be able to recover active TF markers of cell types and tissues
+- GRNs should be able to recover known TF-TF cooperativity events
+
+Have set up framework to analyze different GRN-inference methods called GRETA
+
+Also interested in cell-cell communication
+- many assumptions behind inferring from gene expression (assumes if cell type A express high levels of ligand and B expresses high levels of receptor then they are communication, but this process is dependent on proximity, diffusion of signal, etc)
+- We don't have a lot of detailed knowledge on these processes
+
+**LIANA** - allows you to run many cell-cell interation methods (CellChat, CellPhoneDB, NATMI, Connectome, others)
+- To evaluate, looked at how well predicted cell-cell communication happens between colocalized cells (spatially) - found generally positive results but lack ground truth proof of communication
+- Recommendation: use multiple methods and take consensus set
+- Most cell-cell communication methods don't handle aggregating data across multiple samples well
+  - recommends Tensor Cell2CEll, which projects data into latent space to reduce number of interactions (?)
+
+**MISTy** - allows you to predict cell-cell communication by incorporating spatial data with transcriptiomics
+- other methods: SpatialDM, scHOT
+
+Ended with looking at host-microbiome interactions using Visium data adapted to align from multiple species (looked at mouse gut slides)
+- Tried to identify host-microbiome interactions but it was very challenging
+
 ##  Microscale combinatorial stimulation of human myeloid cells reveals inflammatory priming by viral ligands
 
 **Miguel Reyes, Broad**
+
+
 
 ## Dissecting the cellular events that control swarming dynamics of neutrophil populations
 
