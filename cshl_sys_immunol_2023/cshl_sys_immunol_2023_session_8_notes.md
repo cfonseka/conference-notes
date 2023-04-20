@@ -15,7 +15,7 @@
 
 **Peter Szabo, Columbia**
 
-## Dynamic immune landscapes during melanoma progressionmreveal a role for endogenous opioids in driving T cell dysfunction
+## Dynamic immune landscapes during melanoma progression reveal a role for endogenous opioids in driving T cell dysfunction
 
 **Linglin Huang, HMS**
 
@@ -27,6 +27,6 @@
 
 **Ali Zarrin, TRexBio**
 
-## Single cell profiling of blood immune cell substate kinetics in early sepsis reveals progressive decrease in monocytic myeloid- derived suppressor cells
+## Single cell profiling of blood immune cell substate kinetics in early sepsis reveals progressive decrease in monocytic myeloid-derived suppressor cells
 
 **Pierre Ankomah, Broad**
