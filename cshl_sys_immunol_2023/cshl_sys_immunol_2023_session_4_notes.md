@@ -106,7 +106,42 @@ Overall: Nice talk, but not particularly relevant for us.
 
 **Kathryn Miller-Jensen, Yale**
 
+Lab studies cell-to-cell heterogeneity in macrophages responses to different environments
+- Talk today is about role of macrophages in the tumor microenvironment (and potential targeting)
 
+Real talk title: Uncovering mechanisms of myeloid-targeted CD40 immunotherapy in treating melanoma
+- Melanomas have been responsive to checkpoint inhibitor therapies (50%) - for those who don't respond, macrophages are promising target (since there aren't as many TILs in melanoma)
+- Goal: reprogram tumor-associated macrophages
+  - Inhibt T-cell repression caused by macrophages, or activate for antitumor effects
+
+Approach: target CD40 with agonists to have activating effect on macrophages in tumors
+- Currently in trial as combination therapy with anti-PD1 and anti-CTLA4
+
+Used YR 1.7 mouse model (melenoma model with human oncodriver mutations)
+- Found that triple combination therapy (anti-PD1, anti CSF1R, and CD40 agonist) lead to 80% survival
+
+Use scRNA data to understand cell-cell communication
+- Current methods require clustering, calcualte average receptor and ligand expression, then use previous knowledge to link cells in logical ways
+- Developed NN cell type annotation method (Waskin, Bridges, _Dev Cell_ 2022)
+- For cell-cell communication, used method called NicheNet to infer interactions
+
+Used single cell secretion method to test waht DCs and Macrophages responding to CD40 combo therapy produce - found that DCs did indeed make IL-12 (as predicted by GO enrichment + interaction analysis), while macs secreted Chi313 and TNF
+- Data shown had almost no difference in secretion between controls and triple therapy (?)
+
+Hypothesis: CD40 agonism establishes an IL-12 and IFNg positive feedback loop between DCs and tumor-associated macrophages to promote anti-tumor activity
+
+Showed more data on new trials for melanomas that tested with CD40 agonism improved response to double anti-PD1 and anti-CTLA4 therapy (checkpoint inhibtor)
+- checkpoint inhibtor works so well (100% survival) so had to use lower dose so experiment was properly sensitized to detect CD40 induced effects
+- IL-12 blockade suggested it was dispensable for CD40 effects (?)
+
+scRNA on dissociated tumors (enriched for myeloid cells by FACS) and had difficulty clustering macrophage subtypes
+- Difficult to use cell-communication approaches without pre-clustering, methods often returned too many putative R-L interactions
+
+NICHES - method for inferring cell-cell communication without clustering by examining all potential pairs of cells (developed by colleagues at Yale) -  Raredon and Yang, _Bioinformatics_ 2023.
+- You get some kind of low-dimensional pair embedding which can then be projected
+- Used second tool called MILO (Teichmann/Marioni) which looks for enrichment in neighborhoods to determine differently abundant changes in neighborhoods of cell-cell pairs
+
+Overall: This was very relevant in terms of understanding cell-cell communication, approach they used to R-L interactions seemed powerful for hypothesis generation.
 
 ## Knowledge-based machine learning to extract molecular mechanisms from single-cell and spatial multi-omics
 
