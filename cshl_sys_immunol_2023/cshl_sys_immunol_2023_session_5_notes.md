@@ -1,4 +1,4 @@
-# CSHL Systems Immunology 2023 - Session 5
+elicit# CSHL Systems Immunology 2023 - Session 5
 
 **Engineered Cells and Systems**
 *Thursday, 20 April*
@@ -164,12 +164,38 @@ To further understand immune tissue biology, have collected and banked >30 splee
 Spleen organoids are more quiescent than tonsils, but give stronger responses to live attenuated flu vaccine (in terms of Ab production and plasmablast proliferation)
 - Next steps are to perform co-culturing experiments between spleen and other tissues
 
-Overall: Good talk but light on in-depth data, organoids are a popular way of getting a maniputable system. Agree that mice data is unlikely to be very useful in human immunology
-
+Overall: Good talk but light on in-depth data, organoids are a popular way of getting a maniputable system. Agree that mice data is unlikely to be very useful in human immunology.
 
 ## Antibody-lectin chimeras for glyco-immune checkpoint blockade
 
 **Jessica Stark, Stanford**
+
+Checkpoint blockade immunotherapy has revolutionized treatment of metastatic melanoma
+- Tumor cells upregulate checkpoint blockade molecules on immune cells, suppressing their activity; blocking this (via anti PD-1 and anti CTLA-4) leads to huge inceases in survival
+- Works best in melanoma, but still only increases 2 y survival rates to 45%
+
+It has been known that cancer cells upregulate the expression of sialic acids on surface proteins
+- Present in both solid and liquid tumors
+- A decade ago, a class of sialic acid binding receptors called siglecs were discovered, which are expressed in most immune cell types (and are strikingly homologous to PD-1)
+
+Developed antibody-lectin chimeras (AbLecs) to target sialic acid modified surface glycans
+- Abs naturally do not bind well to glycans
+- Can modify ABs to have siglec receptor, increasing glycan binding, but affinities are too low to be clinically useful
+- Created chimeras with one arm of the molecule made up of a tumor-targeted Ab, while the other side has the glycan binding domain (lectin arm)
+- Have to introduce steric modifications to ensure Ab and lectin chimeras pair properly
+- Combined Trastuzumab with Siglec7 or Siglec9 targeted lectins
+
+AbLecs bind to human cancer cell lines with high affinity; block Siglec binding to human cancer cell lines
+
+AbLecs were able to elicit tumor-killing activity from M0 macrophages and NK cells, with better effectiveness than Ab or Siglec alone
+
+AbLec treatment reduced tumor burden in a humanized murine model of HER2+ cancer
+
+Benchamrked AbLec treatment against current standard, which is combination therapy. Interstingly, bivalent AbLecs had stronger effects than doing combination therapy with separate Abs and Siglec-targeted drugs
+
+AbLecs are amenable to significant modifications; can use different Abs to target different cells (B cells, etc) and also different Siglecs
+
+Overall: Cool idea for anti-cancer therapies, and it seems like the bivalent molecule is effective; needs more validation
 
 ## A lymph node slice culture model to characterize T cell activation dynamics and anti-viral responses in human tissue
 
