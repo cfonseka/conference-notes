@@ -203,13 +203,77 @@ Used kidney atlas to see what changes occur in lupus nephritis
 - Used perfusion system to test human kidneys (from same individual) allowing for internal controls
 - Did stimulation and then performed scRNA (with some enrichment)
 - Identified that NK cells, inflammatory monocytes, and endothelial cells were enriched post IC stimulation
- 
 
+Overall: Good talk, kidney cell atlas has obvious relevance for our work. Interested in endothelial cell changes observed in response to Immunochallenge given txp experiences.
 
 ## Uncovering the spatiotemporal dynamics of placental IgG transfer toward precision prenatal vaccination
 
 **Sepideh Dolatshahi, UVA**
 
+Lab studies systems biology of neonatal-maternal immunity and cancer systems immunology
+- Todays talk is about placental transfer
+
+Newborns are born immunocomprimised, have tranisnet and low levels of IgG for the first year of life
+There is also some passively transferred maternal IgG as well - transported by way of Fc receptor mediated transcytosis across placental barrier before it is galactosylated for transport across the fetal endothelium
+- IgG1 is preferentially transferred
+
+Previously examined cord and maternal levels of Abs at birth to measure transfer efficiency, but "that is not fair because it is a dynamic process"
+
+Decided to build a kinetic-dynamic model of IgG-subclass specific placental transfer
+- Model parameters are built off old experimental data (1996 studies of cordocentesis)
+
+Used simulations to determine which factors in model are most important for transfer efficiency
+- Identified expression of FCgRIIb as key player
+
+Endothelial cell-bound FCgRIIb is a key driver of subclass-specific IgG transfer
+- Expression of FCgRIIb increases over time in prenatal human
+
+Different subclasses will compete with each other for access to FCgRIIb - showed evidence that transfer efficiency dropped when mixed with other IgGs
+
+Used model to simulate effects of prenatal vaccination at different times and found that ~20 weeks produced a stronger IgG response than earlier or later
+- Caveat: just considering IgG titer and not other protective effects
+
 ## A comprehensive thyroid cellular atlas reveals thyrocyte-stromal-immune interactions that drive tissue infiltrative autoimmunity
 
 **Michelle Rengarajan, MGH**
+
+Hormone-producing cells are specifically targeted by the immune system in some forms of autoimmune syndromes (specifically thyroid)
+- T1D, drug induced autoimmunity, or genetic autoimmunity (AIRE/FoxP3 muts)
+
+Thought to be due to self-reactive T cells attacking hormone producing cells
+
+However, there are checkpoints that can reduce this process
+
+Thyroid is infiltrated in many patients, but only 30% require hormone replacement
+- 15% of american women have antibodies to thyroid (!)
+- Thyroid infiltration can clearly be held in check without drugs in some people, and typically immunotherapy is not used to treat
+
+Studied surgical samples of thyroid + paired blood spanning spectrum of thyroid diseases
+- Control, Graves (early infiltration) and Hashimotos (chronic infiltration)
+
+scRNA captured many different cell types, primarily thyrocytes (epithelial)
+- Even in patients with significant infiltration, only amounts for 20-30% at most
+- Within-disease states shows significant heterogeneity of infiltration
+
+Measured TSH levels in patients (higher TSH levels means low function)
+- Found weak correlation between degree of infiltration and TSH levels
+- Provides support for idea that there are tolerating checkpoints in system
+
+Performed DGE on thyrocytes in Hashimotos vs Control - identified upregulation of MHC I and MHC II, as well as interferon-responsive genes
+- Subcluster thyrocytes into five clusters: classical thyrocytes and then four less well-described ones (E1-E4)
+  - E5 cluster showed upregulation of HLA genes
+
+Also identified subset of CD8+ T cells that produce thyroid IFNg and cluster into Trm-like and GZMK+ clusters
+- These populations are elevated in frequency in Hashimotos vs control
+
+Showed unconvincing data that E5 thyrocytes are responding to IFNg production from CD8 Trm-like cells
+
+Next, looked at reverse signaling (E5 send to T cells)
+- Identified that E5 thyrocytes in Hashimotos or Graves express inhibitory molecules but not costimulatory molecules
+
+Finally, showed weak data of correlation between TSH levels and fraction of E5 cells/total immune cells in patients
+- Caveats: weak correlation, small sample size, low fractions
+
+Takeaway: Trm-like CD8+ cells produce IFNg that induce classical -> E5 transition for thyrocytes that can then go onto inhibit immune response (?)
+
+Overall: Interesting talk although not clear thyroid activity is a major concern for us.
