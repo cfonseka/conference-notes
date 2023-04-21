@@ -116,11 +116,43 @@ Showed very weak data suggesting unconventional T cells from LNs have expression
 - Almost certainly driven by IL-17A expression alone
 
 Overall: We do observe unconventional T cells in our data as well, although its unclear how much of that is due to poor CD4 detection in mRNA. This talk did not distinguish gdTs from MAITs from NKs from whatever these cells are, but could follow up with paper to see if definitions are availble
-- Marco Ataide et al., _Immunity_ 2022
+- Marco Ataide et al., _Immunity_, 2022
 
 ## The good, the bad and the beautiful side of Kupffer cell activation in infection
 
 **Charlotte Scott, VIB-UGent**
+
+Kupffer cells = hepatic tissue-resident macrophages
+
+Dysregulation of macrophages (and meyloid cells in general) is thought to play significant role in liver disease
+
+Lab previously published liver cell atlas using spatial/scRNA (livercellatlas.org)
+
+Identified heomeostatic and inflammation-recruited hepatic macrophage states
+- Resident Kupffer cells (KCs) marked by VSIG4+ FOLR2+ CD5L+ TIMD4+
+
+KCs do not become activated in murine model of non-alcoholic fatty liver disease
+- Other data shown suggests same in humans
+- This contravened conventional wisdom about KCs in disease
+
+Looked to see if KCs could become activated in other disease models
+- Applied paracetamol overdose to starved mice to induce liver damage - get massive liver damage after 24h that regenerates by 96h
+- Initial damage causes massive recruitment of KCs - scRNA divides these into 3 populations
+  - Specicially interested in "LAM-like" KCs, which show expression patterns similar to earlier described lipid-associated macrophages
+- Chimera data shows that its resident KCs that become activated, not migratory
+
+Looked to see what is inducing activated KCs by staining + confocal
+- KCs in zone of injury (following paracetamol overdose) have altered morphology and drop expression of CLEC4F
+
+Using Visium, showed that LAM-like KCs specifically reside in zones of injury next to LAMs
+
+Showed experiments demonstrating that LAM-like KCs can be generated in absense of TLR signaling (and thus NF-kB signaling)
+- conversely, lipid antigens do appear able to induce LAM-like KCs - makes sense for fatty liver disease but not so much overdose
+- However, phagocytosis of damaged/dead cells could lead to lipid production as cell walls are broken down (?)
+
+Moved to using salmonella infection murine model, and found that removing A20 from KCs (A20 negatively regulates NF-kB signaling) leads to exarcerbated immune response -> get better bacterial clearing but also death
+
+Overall: This might be an interesting cell type to look into for our liver txp, especially once we have RNA profiles
 
 ## Temporal profiling of human lymphoid tissues reveals coordinated defence to viral challenge
 
