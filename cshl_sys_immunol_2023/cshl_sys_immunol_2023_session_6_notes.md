@@ -89,6 +89,35 @@ Overall: Clearly early research where followup characterization work is in progr
 
 **Paulina Cruz de Casas, Würzburg Institute of Systems Immunology**
 
+Lymph nodes are the central starting point for the adaptive immune response
+- Allows for close contact between APCs, B cells, T cells, etc
+- LNs are attached to tissue by afferent lymphatics, allowing them to surveil for pathogens
+
+Dendritic cells drive tissue-specific immune responses - can mature in tissue, migrate to draining lymph nodes, then present to T cells, before homing back to tissue
+
+Studied differences in tissue-specific draining lymph (skin, lung, small intestine)
+- isolated LN, activated, and assayed cytokine expression by flow
+- Observed different patterns of cytokine expression based on tissue (IL-17A/IL-4/GM-CSF)
+- Identified _unconventional_ T cell population that expressed IL-17A (CD3+ CD4- CD8-)
+
+Unconventional T cells do not recognize antigen presentation from APCs but instead have restricted reactivity, primarily to endogenous lipids or microbial metabolites
+
+Performed scRNA on unconventional T cell population from three LN sites
+- Could not annotate these cells as MAIT or gdT based on typical marker expression
+- CD62L divided the unconventional T cells into two major groups: non-recirculating (CD62L-) and recirculating (CD62L)
+  - Non-recirculating population differed (in % of cells) across LN types
+
+Performed lymph node transplant experiment to show that unconventional T cells do not show tissue-resident expression patterns and instead resemble their transplanted location.
+
+Used Dendra mouse model (engineered to express GFP -> RFP under UV) to determine if unconventional T cells are draining from tissue to lymph
+- Found that unconventional T cells continuously migrate from tissue to draining LNs
+
+Showed very weak data suggesting unconventional T cells from LNs have expression patterns similar to Th17s
+- Almost certainly driven by IL-17A expression alone
+
+Overall: We do observe unconventional T cells in our data as well, although its unclear how much of that is due to poor CD4 detection in mRNA. This talk did not distinguish gdTs from MAITs from NKs from whatever these cells are, but could follow up with paper to see if definitions are availble
+- Marco Ataide et al., _Immunity_ 2022
+
 ## The good, the bad and the beautiful side of Kupffer cell activation in infection
 
 **Charlotte Scott, VIB-UGent**
