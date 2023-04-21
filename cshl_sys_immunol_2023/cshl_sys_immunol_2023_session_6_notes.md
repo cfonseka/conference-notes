@@ -152,11 +152,59 @@ Showed experiments demonstrating that LAM-like KCs can be generated in absense o
 
 Moved to using salmonella infection murine model, and found that removing A20 from KCs (A20 negatively regulates NF-kB signaling) leads to exarcerbated immune response -> get better bacterial clearing but also death
 
-Overall: This might be an interesting cell type to look into for our liver txp, especially once we have RNA profiles
+Overall: This might be an interesting cell type to look into for our liver txp, especially once we have RNA profiles.
 
 ## Temporal profiling of human lymphoid tissues reveals coordinated defence to viral challenge
 
 **Menna Clatworthy, Cambridge**
+
+In order to understand human tissue immunity, we need an entirely human systems that are amenable to experimental manipulation
+
+Lymph nodes contain both adaptive cells (B, Tfh, fDCs) but also innate lymphoid cells (myeloid)
+- The details and timing of these processes have been established in mice, not humans
+- Most human studies are from sampling peripheral blood following vaccine response
+
+SARS-COV2 provided unique opportunity for natural experiment: everyone has gotten a novel challenge
+- Sampled adenoid tissue biopsies (mucosal associated lymphoid tissue) from HCs and COVID-infected patients
+  - Either active (3-5 days post infection) or recovered
+- Assayed with scRNA, IBEX, spatial
+
+Integrated dataset with airway scrapings with scANVI and identified cell types specific to tissue (and not blood)
+  - Germinal center B cells, etc
+
+Biggest (percentage) shift between blood and MALT tissues is monocyte populations
+- Get layer of activated monocytes + neutrophils that are forming a defensive shield (undergoing netosis)
+
+In recovered COVID patients, FOLR2+ macrophages expanded significantly
+- Also change transcriptionally and take on a more anti-inflammatory/M2 signature
+
+So in active infection: monocytes infiltrate and produce self- and neutrophil-recruiting chemokines -> form shield at peiphery -> macrophages come in to repair
+
+scBCR-seq revealed the expansion of specific clones (~5% SARS-COV2 specific)
+
+Plasma cells form niche in MALT tissue samples, IgD + IgA producing cells together
+- Used CellphoneDB to identify cells that are producing chemokine ligands to recruit plasma cells - turns out to be myeloid and stromal cells according to sc analysis
+
+Showed that polyclonal Ig receptor (PIGR) allows for IgA to cross epithelial barrier
+
+Memory B cells expand first in acute infection, then plasmablasts - similar to mouse
+
+Second talk: kidney tissues
+
+Kidney is made up of outer cortex + medulla
+- principal immunological challenge comes from bacteria in urine from bladder, while others come from blood stream in glomeruli
+
+Created kidney cell atlas using pre-natal and post-natal samples
+- Found many resident immune cells (including adaptive immune cells)
+
+Pelvic epithelial cells are expressing molecules for neutrophil recruitment (CXCL8) as well as AMPs (anti-microbial peptides)
+
+Used kidney atlas to see what changes occur in lupus nephritis
+- Used perfusion system to test human kidneys (from same individual) allowing for internal controls
+- Did stimulation and then performed scRNA (with some enrichment)
+- Identified that NK cells, inflammatory monocytes, and endothelial cells were enriched post IC stimulation
+ 
+
 
 ## Uncovering the spatiotemporal dynamics of placental IgG transfer toward precision prenatal vaccination
 
