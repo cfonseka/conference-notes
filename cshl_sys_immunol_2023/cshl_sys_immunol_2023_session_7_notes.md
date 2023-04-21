@@ -1,4 +1,4 @@
-# CSHL Systems Immunology 2023 - Session 7
+successful# CSHL Systems Immunology 2023 - Session 7
 
 **Immunoreceptors: Specificity and Signaling**
 *Friday, 21 April*
@@ -97,16 +97,46 @@ More broadly searched V genes for GRAB motifs that were specific for certain res
 - Identified additional 18 V genes with GRAB motifs
 - Also experimentally showed that mutating critical residues destroys residue-specificity of domain
 
-## Quantitative modeling and analysis of TCR cross-reactivity
-
-**Amitava Banerjee, CSHL**
-
-
-
 ## An integrated analysis of the antigen-specific T cell landscape in autoimmunity
 
 **Alok Joglekar, University of Pittsburgh**
 
+Focus of this talk: identifying epitope specificity of T cell response
+- Use cell-based epitope technology (TScan/SABR) allowing for profiling 10^4 - 10^5 epitopes against library of T cells/TCRs of interest
+
+SABRs - Signaling and Antigen-presenting Bifunctional Receptors
+- Contains pMHC linked to signaling molecule (CD28/CD3) so you get transduction upon congnate TCR-pMHC interactions - lights up GFP in cells
+- Express SABRs in Jurkats that are expressing TCRs of interest
+- Takeaway: SABRs read successful TCR-pMHC interactions
+- In screen setup, calculate enrichhment score for epitope (expected value of enrichment if there was no TCR)
+
+Used NOD mice (murine T1D model) - get progressive heterogeneous infiltration of T cells into pancreas
+- Autoantigens are already known and broadly shared between mice and humans
+- Class of autoantigens thought to be specific to T1D are hybrid insulin peptides
+  - Hybrid epitope with left part made up of insulin and right part made up of different protein - often created post-translationally
+- Isolated T cells from pancreas at 6, 8, 10 weeks and performed scRNA + TCR
+  - Identified both clonally expanded and unique T cells
+  - Expanded T cells fall into clusters with activated/proliferating expression phenotype
+  - Unexpanded T cells are mostly naive like
+
+Created tissue-specific B cell epitope library for screening
+- Had database of all autoimmune peptides isolated from pancreatic islets
+- Validated using known TCR and epitopes
+
+Took top 40 clonally expanded TCRs (most likely to have seen antigen within islets)
+- Reconstructed TCRs and expressed in jurkats, then screened against epitope library
+- Identified TCRs that recognize both native insulin and hybrid insulin peptides
+- Out of 40 clones, 10 TCRs validated -> 6/10 were reactive to hybrid peptides
+
+Designed _in silico_ hybrid insulin peptide library using insulin and proteins found in beta cells then performed screen against TCRs
+- TCRs tended to react to peptides that had left side from insulin and right side from various proteins
+- Went back to single cell and observed that different TCRs did not cluster, suggesting they did not have large differences phenotypically despite recognizing different epitopes
+
+Overall: This was a very cool talk on how to do large scale TCR-epitope screens and SABR seems like a really effective method for doing this
+
+## Quantitative modeling and analysis of TCR cross-reactivity
+
+**Amitava Banerjee, CSHL**
 
 ## Engineering next-generation T Cells for cancer immunotherapy
 
