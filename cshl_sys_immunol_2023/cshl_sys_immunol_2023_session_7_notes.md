@@ -134,13 +134,51 @@ Designed _in silico_ hybrid insulin peptide library using insulin and proteins f
 
 Overall: This was a very cool talk on how to do large scale TCR-epitope screens and SABR seems like a really effective method for doing this
 
+## Engineering next-generation T Cells for cancer immunotherapy
+
+**Yvonne Chen, UCLA**
+
+Focused on engineering CAR-T cells
+- Adoptive T cell therapy involves isolating T cells from patient blood, engineering in tumor-specific TCRs, expanding _ex vivo_, and then re-infusing into patient
+- Currently autologous all though many people are working on allogeneic
+
+Antigen escape significantly limits the durability of response to CAR-T
+- Showed data from diffuse B-cell lymphoma indicating that 50% of patients relapse in 6 months and progression-free survival is only 3-6 mos
+  - Substantial fraction of relapsiing patients end up with tumors that have lost targeted antigen (in this case, CD19)
+
+Works on developing bi-specific CARs that can recgonize multiple tumor antigens (in this case, CD20 alongside CD19)
+- Set up binding domains in tandem (called tandem CARs) - they call them "OR gate" CARs since they can recognize one or the other
+- In clinical trial, 10/11 responded to tandem CAR therapy, while 8/11 saw complete response
+ - One complete non-responder was found to have CD19- CD20- tumor
+- Claim: very little toxicity even though trial patients have very high tumor burden - maximum cytokine release syndrome stage was stage 1 for any patient
+
+For some reason, CD19 CAR T cells outcompete CD20 CAR T cells (which is why they worked to build bispecific CAR instead of dosing with two different CARs)
+
+Tested a series of CD20-targeting CARs using different monoclonal Abs and tested in murine model
+- Rituximab based CAR outperformed others initially but eventually burned out and there were no differences in long-term survival rates
+- Some CARs (including the Rituximab CAR) suffer from tonic signaling (proliferation in absence of antigen)
+
+Hypothesis: Some tonic signaling is good but too much drives the cells towards premature exhaustion
+
+Developed modified Rituximab CAR by inserting alanines to base of CAR transmembrane domain to induce conformational changes in TCR
+- Observed significant reduction of tonic signaling with 1, 2, or 4 alanines
+- Saw that 1, 2, and 4 alanine mods also lead to bettter survival while 3 alanines did not
+  - 3 alanines leads to a 320 degree twist which is fairly close to 360 degrees (i.e., no induced conformational change)
+
+Generated hybrid CARs using Rituximab and Leu16 CARs
+- Appear to generate moderate levels of cytokines (between Rituximab and Leu16 single CARs)
+- Showed data indicating hybrid CAR significantly outperforms CD19 CAR and can handle second tumor challenge
+
+Used bulk RNA to analyze gene expression changes in hybrid CAR cells upon antigen stim
+- Observed enrichment for memory cell phenotypes as well as IFNg response and T cell activation
+
+Overall: Pretty amazing evidence - hybrid and bispecific CARs seem like the next generation of the therapies, given all the current caveats with CAR T therapy overall 
+
 ## Quantitative modeling and analysis of TCR cross-reactivity
 
 **Amitava Banerjee, CSHL**
 
-## Engineering next-generation T Cells for cancer immunotherapy
 
-**Yvonne Chen, UCLA**
 
 ## Mapping the T cell repertoire to a complex defined gut bacterial community
 
