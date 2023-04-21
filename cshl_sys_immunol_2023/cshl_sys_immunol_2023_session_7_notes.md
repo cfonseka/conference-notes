@@ -67,7 +67,35 @@ Used modified version of virus to deliver specific payload to antigen-specified 
 - Did reverse experiment where they use lenti to deliver shRNA against FAS, then add anti-FAS - see about 2x-fold enrichment in antigen-specific T cells
 - They go on to do similar experiments with B cells by expressing BCRs
 
-Overall: System seems very cool (and similar to Sana and others cell therapy modalities)
+Overall: System seems very cool (and similar to Sana and others cell therapy modalities) - seems like it would be useful for screening (but throughput is apparently quite low at the moment)
+
+## Germline-encoded amino acid-binding motifs drive public antibody responses
+
+**Ellen Shrock, HMS**
+
+Using Tomasz's VirScan, can use phage display library to tile across all potential viral peptides (meant to be full representation of human virome)
+- Can use this to determine which peptides are recognized by using patient blood and sequencing phage
+
+Public epitopes are recognized by individuals
+- Over 70% of people make Abs to one specific SARS-COV2 epitope
+- Showed another example where people from across the globe all react strongly to a small section of the RSV Glycoprotein G or Adenovirus C penton peptides, suggesting that these are public epitopes
+
+Are the Abs that recognize these public epitopes the same between diverse individuals?
+- points out that antigen specificity is defined by both the CDR3 but also the CDR1 and CDR2 regions (which are mostly germline encoded)
+
+Identified nine Abs across 7 donors that recognized a specific public flu epitope
+- CDR3s were completely different, but shared specific IgH V and IgL/K V genes
+- Claim: This pattern is observed time and time again for different public epitopes
+
+Do public epitopes themselves have skewed AA composition (compared to human virome)
+- found that lambda V recognized epitope had overrepresentation of lysines - does this mean labmda V genes have germline-encoded affinity for lysines?
+- Identified positions within V genes that contain lysine-specific binding domains (dubbed GRAB domains)
+  - Example shown is IgLV6-57 - points out all critical residues are germkine encoded
+  - Other lambda V genes have highly similarly structured GRAB domains
+
+More broadly searched V genes for GRAB motifs that were specific for certain residues
+- Identified additional 18 V genes with GRAB motifs
+- Also experimentally showed that mutating critical residues destroys residue-specificity of domain
 
 ## Quantitative modeling and analysis of TCR cross-reactivity
 
@@ -79,17 +107,10 @@ Overall: System seems very cool (and similar to Sana and others cell therapy mod
 
 **Alok Joglekar, University of Pittsburgh**
 
-## Decoding and rewiring immune recognition at the single-cell level
-
-**Bingfei Yu, USC**
 
 ## Engineering next-generation T Cells for cancer immunotherapy
 
 **Yvonne Chen, UCLA**
-
-## Germline-encoded amino acid-binding motifs drive public antibody responses
-
-**Ellen Shrock, HMS**
 
 ## Mapping the T cell repertoire to a complex defined gut bacterial community
 
