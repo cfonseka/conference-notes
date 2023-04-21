@@ -205,3 +205,25 @@ Overall: Interesting that even a very naive approach like Hamming distance impro
 ## Mapping the T cell repertoire to a complex defined gut bacterial community
 
 **Kazuki Nagashima, Stanford**
+
+Goal of project is to understand interactions between gut microbial strains and T cell repertoire
+- Single gene KOs are an effective way to study biology, but difficult to drop out single bacterial strain from microbiome
+- To get around this, gut microbial strains are introduced to germ free mice, and to test function of a single strain, that strain is not introduced
+  - In this way, can perform screening of gut microbial library
+
+Built synthetic model of 104 bacterial strains that represent human gut microbiome (hCOM)
+- Tested how immmune cells respond to introduction of bacterial introduction after 2 weeks
+- Saw that Tregs and Th17 T cells were elevated and more similar to non-SPF mice
+- Then wanted to do single strain removals to determine T cell specificity to strains
+
+Performed second experiment where immune cells from mouse exposed to entire hCOM set (2 wk) are extracted and cultured in an MLR with DCs presenting specific strain and examined cell fractions by FACS
+- T cells from germ-free mice are used as negative control - background was low
+- Conversely, most strains from hCOM were able to stimulate at least one and often more than one type of T cells - appears that the three T cell subtypes assayed were Th17, pTreg, and FR4+ Th (?)
+
+Next, extracted immune cells from mice exposed to hCOM - performed scRNA + TCR, picked the top expanded clones and cloned into retroviral vectors to create complicated model system
+- Effectively: tests for ability of strain to induce IL-2 production from TCRs to identify strain-specific TCRs
+- Found a set of TCRs that are commonly found on Th17s and labeled as "Th17-rich TCRs"
+
+Went onto to perform more screens (not shown) and identified Firmicutes antigen that is very strongly immunogenic
+
+Takeaway: even though gut repertoire is very diverse, TCRs recognize a more limited set of conserved epitopes  
