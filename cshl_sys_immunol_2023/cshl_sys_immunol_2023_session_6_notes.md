@@ -59,6 +59,32 @@ Overall: Interesting talk and I wonder if we could identify these types of struc
 
 **Ayshwarya Subramanian, BWH**
 
+Alzheimer's disease affects many people, two major types: familial or sporadic
+- Familial involves genetic mutations that lead to amyloid buildup
+- Sporadic is the dominant form (95%) mediated by genetic risk factors
+
+GWAS revealed a Alzheimer's linked variant that controls the expression of TIM-3 (_Havcr2_) in myeloid cells
+- Expression of TIM-3 and other immune checkpoint molecules are high in microglia
+
+TIM-3 has been studied on T cells, but role in microglia is less well understood
+
+Microglia can be described as being in two states: homeostatic and activated
+- homeostatic: Clec7a+
+- activated: Clec7a-
+
+Microglia play in important role in the development of the brain (neuronal pruning) and thus activate very early on (prenatal)
+- TIM-3 expression tracks with TGF-b expression in public microarray data
+
+Showed that TGF-b can induce the expression TIM-3 in microglia; TGF-b KO abolishes TIM-3 expression
+
+TIM-3 KO microglia have less of a homeostatic phenotype and are marked by acticated/phagocytotic signatures
+- phagocytotic activity assay data is weak in TIM-3 KO vs WT (barely any difference)
+
+TIM-3 binds Smad2 (important for TGFb signaling) and TGFbRII
+- phosphorylated Smad2 is reduced in TIM-3 KO
+
+Overall: Clearly early research where followup characterization work is in progress - there was not any hypotheses made about what TIM-3 is doing in microglia (other than it can be considered part of TGF-b signaling)
+
 ## Lymphatic migration of unconventional T cells promotes site- specific immunity in distinct lymph nodes
 
 **Paulina Cruz de Casas, Würzburg Institute of Systems Immunology**
