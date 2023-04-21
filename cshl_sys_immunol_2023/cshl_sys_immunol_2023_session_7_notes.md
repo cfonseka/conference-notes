@@ -172,13 +172,35 @@ Generated hybrid CARs using Rituximab and Leu16 CARs
 Used bulk RNA to analyze gene expression changes in hybrid CAR cells upon antigen stim
 - Observed enrichment for memory cell phenotypes as well as IFNg response and T cell activation
 
-Overall: Pretty amazing evidence - hybrid and bispecific CARs seem like the next generation of the therapies, given all the current caveats with CAR T therapy overall 
+Overall: Pretty amazing evidence - hybrid and bispecific CARs seem like the next generation of the therapies, given all the current caveats with CAR T therapy overall
 
 ## Quantitative modeling and analysis of TCR cross-reactivity
 
 **Amitava Banerjee, CSHL**
 
+Focus of talk is T cell crossreactivity - ability of a TCR to bind multiple pMHC complexes
+- How do we predict whether a given epitope binds to a TCR?
 
+Describes methods for testing a single pMHC against many TCRs (clain: these methods are well established) while testing multiple pMHCs vs a single TCR (claim: not well understood)
+- Want to cluster epitopes that can bind (or not bind) to a given TCR and identify similarities
+
+Can describe epitopes mathematically by similarity using methods like Hamming distance or more complex ones that take in biochemical data
+
+Performed screen of peptides by identifying most strongly binding "index peptide" and then mutating each position to new residues and measure binding
+- Identify "strong binders" and "non-binders"
+
+Showed data indicating that using Hamming distance metric fails as it cannot discriminate between strong binders and non-binders (since they can both be 1 AA change away)
+- BLOSUM100 metric outperforms random classification (AUC 0.7)
+
+Claim: Positional information needs to be included for better result (changes at end of epitope instead of center might have different effects)
+
+Adding in positional data using a Bayseian framework improves AUCs to 0.8 for Hamming (from 0.5) and to 0.9 for BLOSUM100
+
+Across different TCRs and different distance functions, position weights learned appear fairly similar - weights are lowest on the first and last positions and highest in the middle
+
+Going to crystal structures showed that middle positions of epitope has most contact with CDR3 arm of TCRs - thus weights learned by algorithm correspond to structural knowledge
+
+Overall: Interesting that even a very naive approach like Hamming distance improves so much with positional weighting. Unclear to me how prior distributions on weights are set, or how applicable this is outside of the two epitopes tested
 
 ## Mapping the T cell repertoire to a complex defined gut bacterial community
 
