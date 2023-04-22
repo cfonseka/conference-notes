@@ -69,6 +69,10 @@ Have lots of single cell data on tissues from RDH adults and infants - data is u
 
 Papers are Conners et al. (in revision) and Szabo et al. (in prep) from Farber lab at Columbia
 
+Single cell hierarchial poisson factorization is an NMF-like approach for single cell developed by Peter Sims at Columbia
+- yields non-orthogonal latent factors, models dropout
+
+
 ## Dynamic immune landscapes during melanoma progression reveal a role for endogenous opioids in driving T cell dysfunction
 
 **Linglin Huang, HMS**
