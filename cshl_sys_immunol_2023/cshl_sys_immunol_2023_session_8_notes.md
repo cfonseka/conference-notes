@@ -1,4 +1,4 @@
-# CSHL Systems Immunology 2023 - Session 8
+lymphoid# CSHL Systems Immunology 2023 - Session 8
 
 **Human Systems Immunology II**
 *Saturday, 22 April*
@@ -72,7 +72,6 @@ Papers are Conners et al. (in revision) and Szabo et al. (in prep) from Farber l
 Single cell hierarchial poisson factorization is an NMF-like approach for single cell developed by Peter Sims at Columbia
 - yields non-orthogonal latent factors, models dropout
 
-
 ## Dynamic immune landscapes during melanoma progression reveal a role for endogenous opioids in driving T cell dysfunction
 
 **Linglin Huang, HMS**
@@ -80,6 +79,45 @@ Single cell hierarchial poisson factorization is an NMF-like approach for single
 ## Development of adaptive immunity in human tissues
 
 **Donna Farber, Columbia**
+
+Immune cells are distributed throughout tissues and circulation
+- TRM - tissue resident memory T cells
+- BRM - tissue resident memory B cells
+
+TRMs coordinate _in situ_ immune responses
+- Showed data from murine influenza model showing that lung TRMs were able to keep mice alive while spleen TRMs had similar survival rates to WT
+- Also associated with autoimmune skin disorders (psoriasis, vitiligo)
+
+Coordinated with OPOs to get tissues from RDHs (adult and child)
+- Many tissues from one person (tonsil, thymus, lung, spleen, pancreas, LN, kidneys, skin, bone marrow, intestines)
+- 614 donors collected over 12 years, majority non-pediatric
+
+Susceptibility to infectious disease (as measured by pre-pandemic infectious disease hospitalization rates) is highest at birth and old age (>70)
+
+COVID was a sweep through entire population of new challenge with no memory
+- Age was strongest predictor of COVID mortality
+
+Studied immune tissues in 90 pediatric organ donors from 0-10 ys
+
+First, measured accumulation of T cells in mucosal sites over time
+- Nearly none at 8 days of age, but get to 50% of later total by 1.3-1.4 ys
+- Most mucosal sites quickly accumulate memory cells (almost sigmoid) while rate of naive-memory shift is much slower and linear in lymphoid tissues
+
+Described Trm phenotype in early and late childhood by bulk RNAseq
+- Identified more "vulnerable" stage for Trms before 3 ys of age
+
+Found that pediatric lungs contain BALT (bronchus-associated lymphoid tissues) - secondary lymphoid tissue with follicles + B cells
+- Appears in first 6 mos of life and matures at 3 ys of age, then begins to recess by 6-0 ys
+- Similarly, B cell numbers in lung peak at 3 and then decrease
+- BALTs only appear in adults in disease
+- Stained for CD10 and identified germinal centers in BALT follicles
+  - Flow cytometry revealed that lung tissue contained major B cell differentiation subsets
+  - Then performed scRNA and compared lung B cells to lymph node B cells, finding that lung B cells exhibit markers of GC formation (Bcl6/Ly9) and activation (NR4A1/2, CD83)
+
+Performed CITE-seq profiling of 24 adult (20-75 yrs) donors, assayed 1.3M cells
+  - MMOCHI - cell type classifier for CITE-Seq
+
+Overall: Good work and tissue-relevant data will become more relevant for us in the future. Hopefully these datasets will be released soon, but clearly worth keeping track of the Farber lab
 
 ## Discovery of novel Treg modulators by integrating gene expression profiling with computational modeling and functional assays
 
