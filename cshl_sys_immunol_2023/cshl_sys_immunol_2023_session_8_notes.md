@@ -28,15 +28,46 @@ KDACi induced glutaminolysis promote Tmem differentiation _in vivo_
 
 Performed RNA-seq and ATAC-seq to understand changes being induced in T cells
 - Identified DEGs and saw strong enrichment of entire memory signature
+- ATAC analysis indicates multiple changes in memory-associated pathways especially Wnt
 
+Tested KDACi in multiple _in vivo_ murine models and saw markedly increased memory T cell responses in each setting.
 
 ## Multi-dimensional integration of protein interactomes with genomic and molecular data discovers distinct RA endotypes
 
 **Jishnu Das, University of Pittsburgh**
 
+Lab focuses on using machine learning to integrate multiomics data in the context of immunological disorders
+- Focus: defining disease subtypes in RA
+
+RACER cohort - 1,000 RA patients with clinical metadata and individual genotypes
+- Sequenced on SNP chip
+- Most subjects are either CCP+ RF+ or CCP- RF+
+  - There have been differences in disease progression outcomes between the two subtypes
+  - Current clinical practice uses the same treatment regimen (MTX/aTNF)
+
+First looked if there are differences in heritability between the two subtypes
+- Used RML framework (restricted maximum likelihood) to estimate heritability for each group
+- Found significant differences in heritability (~30%) with double positive subtype being more heritable
+- Performed GWAS and the only locus over sig was HLA - but only ~10% of heritability can be explained by HLA locus variants
+  - Study cohort is likely underpowered
+
+Tried to use additional genetic data to identify other potentially responsible loci
+- Approach: map interaction networks to perform GWAS using network propagation
+- Feed in LD-adjusted scores, and then use random-walk to determine significance
+  - Used entire human interactome network (17,000 nodes and 250,000 edges)
+- Identified 13 modules of interest
+
+Use tool called PrediXcan that predicts individual level gene expression data from genotypes (how?)
+
+Than used stratified-LD score regression to evaluate modules identified by network analysis and validated 7/13 as heritable
+
 ## Human infant and adult T cells exhibit distinct programs of residency, activation, and effector function across tissues
 
 **Peter Szabo, Columbia**
+
+Have lots of single cell data on tissues from RDH adults and infants - data is unpublished but may eventually be useful for pediatric heart program
+
+Papers are Conners et al. (in revision) and Szabo et al. (in prep) from Farber lab at Columbia
 
 ## Dynamic immune landscapes during melanoma progression reveal a role for endogenous opioids in driving T cell dysfunction
 
