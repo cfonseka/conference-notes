@@ -1,4 +1,4 @@
-elicit# CSHL Systems Immunology 2023 - Session 5
+# CSHL Systems Immunology 2023 - Session 5
 
 **Engineered Cells and Systems**
 *Thursday, 20 April*

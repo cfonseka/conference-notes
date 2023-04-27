@@ -1,4 +1,4 @@
-lymphoid# CSHL Systems Immunology 2023 - Session 8
+# CSHL Systems Immunology 2023 - Session 8
 
 **Human Systems Immunology II**
 *Saturday, 22 April*

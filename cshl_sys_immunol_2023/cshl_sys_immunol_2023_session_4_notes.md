@@ -1,4 +1,4 @@
-responsecombinatorialrecommendsactivityunderstanding# CSHL Systems Immunology 2023 - Session 4
+# CSHL Systems Immunology 2023 - Session 4
 
 **Cellular Dynamics, Interactions, and Communication**
 *Thursday, 20 April*

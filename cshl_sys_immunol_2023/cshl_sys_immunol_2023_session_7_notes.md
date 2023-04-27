@@ -1,4 +1,4 @@
-successful# CSHL Systems Immunology 2023 - Session 7
+# CSHL Systems Immunology 2023 - Session 7
 
 **Immunoreceptors: Specificity and Signaling**
 *Friday, 21 April*
